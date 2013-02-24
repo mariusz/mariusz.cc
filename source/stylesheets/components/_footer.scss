@@ -1,0 +1,35 @@
+@import "compass/css3/border-radius";
+@import "compass/css3/transition";
+
+$twitter-blue: #00aced;
+$pinterest-red: #CB2027;
+$dribbble-pink: #E24D87;
+
+[role=footer] {
+  @include container;
+
+  color: lighten($text-color, 50%);
+  text-align: center;
+  font-size: 75%;
+
+  li {
+    display: inline;
+  }
+
+  .icon {
+    @include transition(background, color .25s $easing);
+    @include border-radius(5px);
+
+    color: lighten($text-color, 50%);
+    display: inline-block;
+    padding: 15px 20px;
+
+    &:hover {
+      color: $off-white;
+    }
+  }
+
+  .icon-twitter:hover { background: $twitter-blue; }
+  .icon-pinterest:hover { background: $pinterest-red; }
+  .icon-dribbble:hover { background: $dribbble-pink; } 
+}

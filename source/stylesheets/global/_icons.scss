@@ -1,0 +1,15 @@
+@import "compass/css3/font-face";
+@include font-face("icons", font-files("icons.ttf", ttf, "icons.woff", woff, "icons.svg#icons", svg), "icons.eot");
+
+.icon {
+  font-family: "icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+
+  &.icon-twitter:before { content: "\F309"; }
+  &.icon-pinterest:before { content: "\F312"; }
+  &.icon-dribbble:before { content: "\F31B"; }
+  &.icon-spotify:before { content: "\F327"; }
+  &.icon-instagram:before { content: "\F32D"; }
+}

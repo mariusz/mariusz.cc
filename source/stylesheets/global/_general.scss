@@ -1,0 +1,12 @@
+@import "compass/css3/transition";
+
+a {
+  @include transition(color .25s $easing);
+
+  text-decoration: none;
+  color: $brand-blue;
+
+  &:hover {
+    color: darken($brand-blue, 20%);
+  }
+}

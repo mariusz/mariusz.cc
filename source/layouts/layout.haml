@@ -1,0 +1,23 @@
+!!! 5
+
+%html
+  %head
+    %meta{charset: "utf-8"}
+    %meta{name: "description", content: "Freelance Web & Interactive Designer based in Kraków, Poland and Berlin, Germany."}
+    %meta{name: "keywords", content: "freelance, web design, ui design, ux design, designer, interactive design, mobile design, iOS design, user interface, user experience, krakow, berlin"}
+
+    = partial "layouts/typekit"
+
+    = stylesheet_link_tag "vendor/normalize", "site"
+
+    %title Mariusz Cieśla - Freelance Interactive Designer
+  %body
+    %header{role: "banner"}
+      %h1 
+        = link_to "Mariusz Cieśla", "/"
+
+      = partial "layouts/navigation"
+
+    = yield
+
+    = partial "layouts/footer"

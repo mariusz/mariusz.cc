@@ -1,0 +1,17 @@
+[role=banner] {
+  background: $brand-red;
+  color: $off-white;
+  margin-top: 50px;
+
+  h1 {
+    @include image-2x("logo.png", "logo@2x.png", 48px, 48px);
+
+    display: block;
+    margin: 0 auto;
+    width: 48px;
+    height: 48px;
+    text-indent: -999em;
+    position: relative;
+    top: -25px;
+  }
+}

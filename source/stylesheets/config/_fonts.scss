@@ -1,0 +1,36 @@
+$base-font-size: 16px;
+$ms-ratio: golden();
+$line-height: 1.5; 
+$header-line-height: 1.25;
+
+body {
+  font-family: "europa", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  line-height: $header-line-height;
+}
+
+h1 {
+  font-size: ms(2, $base-font-size, $ms-ratio);
+}
+
+h2 {
+  font-size: ms(1, $base-font-size, $ms-ratio);
+}
+
+h3 {
+  font-size: $base-font-size;
+}
+
+.huge {
+  font-size: ms(4, $base-font-size, $ms-ratio);
+}
+
+.amp {
+  font-family: "garvis-pro", Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: normal;
+}

@@ -1,0 +1,8 @@
+@mixin image-2x($image, $image-2x, $width, $height) {
+  background-image: image-url($image);
+
+  @media screen and (-webkit-min-device-pixel-ratio: 1.25) {
+    background-image: image-url($image-2x);
+    background-size: $width $height;
+  }
+}

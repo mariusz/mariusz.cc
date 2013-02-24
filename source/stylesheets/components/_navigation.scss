@@ -1,0 +1,39 @@
+@import "compass/css3/transition";
+
+nav, [role=navigation] {
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+[role=navigation] {
+  @include container;
+
+  ul {
+    @include span-columns(8);
+    @include pad(2,2);
+
+    text-align: center;
+  }
+
+  li {
+    display: inline;
+    padding: 0 15px 40px;
+    border-bottom: 1px solid $text-color;
+  }
+
+  a {
+    @include transition(color .25s $easing);
+
+    color: $text-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .075em;
+
+    &:hover {
+      color: $off-white;
+    }
+  }
+}
