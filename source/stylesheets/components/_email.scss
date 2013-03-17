@@ -6,6 +6,8 @@
   }
 
   p {
+    @include span-columns(12);
+
     text-align: center;
     margin-bottom: 2em;
 
