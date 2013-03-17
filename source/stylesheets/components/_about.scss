@@ -1,0 +1,39 @@
+.about {
+  background: #111F2C; 
+  color: #fff;
+  padding: 50px;
+  min-height: 400px;
+
+  @media only screen and (min-width: 800px) {
+    background: #111f2c image-url("photo.jpg") bottom right no-repeat;
+    background-attachment: fixed;
+  }
+
+  .content {
+    @include container;
+  }
+
+  header {
+    @extend .section-header;
+  }
+
+  h2 {
+    color: #fff;
+  }
+
+  p {
+    font-size: 1.25em;
+
+    @media only screen and (min-width: 600px) {
+      font-size: 1.5em;
+    }
+  }
+  
+  .description {
+    @include span-columns(12);
+
+    @media only screen and (min-width: 800px) {
+      @include span-columns(6);
+    }
+  }
+}

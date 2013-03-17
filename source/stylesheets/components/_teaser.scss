@@ -1,23 +1,43 @@
 .teaser {
   color: $off-white;
-  background: $brand-red;
+  background: image-url("background.jpg");
+  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   text-align: center;
-  text-transform: uppercase;
 
   .page {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 5em;
+    padding-bottom: 7em;
+
+    @media only screen and (min-width: 800px) {
+      padding-top: 8em;
+      padding-bottom: 12em;
+    }
   }
 
   h1 {
-    font-weight: 300;
+    font-weight: 500;
+    letter-spacing: -.05em;
+    line-height: 1.1;
+    font-size: ms(1);
+
+    @media only screen and (min-width: 30em) {
+      font-size: ms(2);
+    }
   }
 
   .design-and-build {
-    @extend .huge;
-
+    font-size: 1.5em;
     display: block;
-    letter-spacing: -.05em;
     font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .actions {
+    margin-top: 1em;
+    text-align: center;
   }
 }

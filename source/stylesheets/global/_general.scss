@@ -10,3 +10,15 @@ a {
     color: darken($brand-blue, 20%);
   }
 }
+
+.section-header {
+  text-align: center;
+  padding: 50px 0;
+
+  h2 {
+    font-size: 1.25em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: lighten($text-color, 20%);
+  }
+}
