@@ -1,3 +1,5 @@
+#= require vendor/jquery.jribbble.min
+
 $ ->
   getDribbbleShots = ->
     $.jribbble.getShotsByPlayerId 'mariusz', (playerShots) -> 
@@ -13,5 +15,14 @@ $ ->
       $('#dribbble_shots').html html.join('')
     , page: 1, per_page: 8
 
-   $(document).ready ->
+  $('[role=navigation] a').click ->
+    sectionName = $('body').find($(this).attr("href"))
+
+    $('html, body').animate(
+      scrollTop: sectionName.offset().top
+    , 750)
+
+    return false
+
+  $(document).ready ->
     getDribbbleShots()
