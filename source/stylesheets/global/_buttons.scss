@@ -11,7 +11,9 @@ button {
   padding: .5em 1em;
   font-weight: bold;
   text-decoration: none;
-  text-shadow: 0 -1px 0 rgba(0,0,0,.25); 
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+
+  -webkit-font-smoothing: antialiased; 
 
   &:hover {
     background: lighten($button-color, 5%);
