@@ -11,10 +11,14 @@ nav, [role=navigation] {
   @include container;
 
   ul {
-    @include span-columns(8);
-    @include pad(2,2);
+    @include span-columns(12);
 
     text-align: center;
+
+    @media only screen and (min-width: 600px) {
+      @include span-columns(8);
+      @include pad(2,2);
+    }
   }
 
   li {
