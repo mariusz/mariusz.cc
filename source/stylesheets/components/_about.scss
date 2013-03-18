@@ -1,11 +1,17 @@
+@import "compass/css3/transition";
+
 .about {
-  background: #111F2C; 
+  @include transition(background .25s $easing);
+
+  background-color: #111F2C;
+  background-position: bottom right;
+  background-repeat: no-repeat;
   color: #fff;
   padding: 50px;
   min-height: 400px;
 
   @media only screen and (min-width: 800px) {
-    background: #111f2c image-url("photo.jpg") bottom right no-repeat;
+    background-image: image-url("photo.jpg");
     background-attachment: fixed;
   }
 
