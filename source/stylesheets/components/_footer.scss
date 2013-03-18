@@ -24,6 +24,8 @@ $dribbble-pink: #E24D87;
     display: inline-block;
     padding: 15px 20px;
 
+    -webkit-font-smoothing: antialiased;
+
     &:hover {
       color: $off-white;
     }
