@@ -30,11 +30,15 @@
   }
 
   .design-and-build {
-    font-size: 1.75em;
-    letter-spacing: .1em;
+    font-size: 1.5em;
     display: block;
     font-weight: bold;
     text-transform: uppercase;
+
+    @media only screen and (min-width: 40em) { 
+      font-size: 1.75em;
+      letter-spacing: .1em;
+    }
   }
 
   .actions {
