@@ -15,7 +15,8 @@ $ ->
       $('#dribbble_shots').html html.join('')
     , page: 1, per_page: 8
 
-  $('[role=navigation] a').click ->
+
+  $('[role=navigation] a, .teaser .button').click ->
     sectionName = $('body').find($(this).attr("href"))
 
     $('html, body').animate(

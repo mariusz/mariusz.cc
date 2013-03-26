@@ -18,7 +18,13 @@
     }
   }
 
+  .page h1, .actions {
+    @include animation(reset 0, fade-in 1s ease-in);
+  }
+
   h1 {
+    @include animation-delay(0, 0);
+
     font-weight: 500;
     letter-spacing: -.05em;
     line-height: 1.1;
@@ -42,7 +48,17 @@
   }
 
   .actions {
+    @include animation-delay(0, 0);
+
     margin-top: 1em;
     text-align: center;
+  }
+
+  .or {
+    margin-left: 1em;
+    margin-right: 1em;
+    font-family: Georgia, sans-serif;
+    font-weight: normal;
+    font-style: italic;
   }
 }

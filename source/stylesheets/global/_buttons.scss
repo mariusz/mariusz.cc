@@ -4,6 +4,7 @@
 input[type=submit],
 button {
   @include box-shadow(0 .25em 0 darken($button-color, 10%));
+  @include transition(background-color .5s $easing);
 
   border-radius: .25em;
   background: $button-color;

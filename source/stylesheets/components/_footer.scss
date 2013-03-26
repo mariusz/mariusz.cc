@@ -20,7 +20,7 @@ $app-net-gray: #898D90;
   }
 
   .icon {
-    @include transition(background, color .25s $easing);
+    @include transition(background-color, color .5s $easing);
     @include border-radius(5px);
 
     color: lighten($text-color, 50%);

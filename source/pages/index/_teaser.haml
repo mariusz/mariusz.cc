@@ -1,9 +1,6 @@
 .teaser
-  %header{role: "banner"}
-    %h1 
-      = link_to "Mariusz Cieśla", "/"
+  = partial "layouts/header"
 
-    = partial "layouts/navigation"
   .page
     %h1
       My name is Mariusz and I
@@ -11,7 +8,9 @@
         design
         %span.amp &amp;
         build
-      web and mobile products
+      web and mobile interfaces.
 
     .actions
-      = link_to "Learn more", "#work", class: "button"
+      = link_to "Check out my work", "#work", class: "button"
+      %span.or or
+      = link_to "Get in touch", "#contact", class: "button"
