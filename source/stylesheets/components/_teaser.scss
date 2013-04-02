@@ -26,8 +26,8 @@
     @include animation-delay(0, 0);
 
     font-weight: 500;
-    letter-spacing: -.05em;
-    line-height: 1.1;
+    letter-spacing: 0;
+    line-height: 1.125;
     font-size: ms(1);
 
     @media only screen and (min-width: 30em) {
@@ -60,5 +60,9 @@
     font-family: Georgia, sans-serif;
     font-weight: normal;
     font-style: italic;
+  }
+
+  .button {
+    font-size: 1.25em;
   }
 }

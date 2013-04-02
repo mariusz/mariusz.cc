@@ -40,4 +40,9 @@ $app-net-gray: #898D90;
   .icon-dribbble:hover { background: $dribbble-pink; }
   .icon-app-net:hover { background: $app-net-gray; }
   .icon-gplus:hover { background: $gplus-red; } 
+
+  p {
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
 }
