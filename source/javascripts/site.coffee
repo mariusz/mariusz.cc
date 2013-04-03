@@ -25,5 +25,8 @@ $ ->
 
     return false
 
+  $('.contact .button').click ->
+    mixpanel.track('Contact button clicked')
+
   $(document).ready ->
     getDribbbleShots()
