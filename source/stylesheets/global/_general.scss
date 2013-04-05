@@ -4,10 +4,10 @@ a {
   @include transition(color .25s $easing);
 
   text-decoration: none;
-  color: $brand-blue;
+  color: $button-color;
 
   &:hover {
-    color: darken($brand-blue, 20%);
+    color: darken($button-color, 20%);
   }
 }
 

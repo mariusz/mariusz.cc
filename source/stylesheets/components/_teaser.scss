@@ -1,6 +1,6 @@
 .teaser {
   color: $off-white;
-  background: image-url("background.jpg");
+  background: $teaser-bg image-url("background.jpg");
   background-size: 100% 100%;
   background-size: cover;
   background-position: center center;
@@ -50,7 +50,7 @@
   .actions {
     @include animation-delay(0, 0);
 
-    margin-top: 1em;
+    margin-top: 3em;
     text-align: center;
   }
 
@@ -64,5 +64,10 @@
 
   .button {
     font-size: 1.25em;
+    background: $text-color;
+
+    &:hover {
+      background: darken($text-color, 10%);
+    }
   }
 }
