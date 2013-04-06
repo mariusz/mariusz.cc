@@ -48,6 +48,16 @@ require 'animation'
 #   end
 # end
 
+helpers do
+  def page_class
+    current_resource.url.sub('.html','').gsub('/','-')
+  end
+end
+
+with_layout :work do
+  page "/work/*"
+end
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
@@ -82,12 +92,4 @@ configure :build do
   # set :http_path, "/Content/images/"
 end
 
-activate :blog do |blog|
-  blog.prefix = "articles"
-  blog.permalink = ":year/:title.html"
-  blog.taglink = "categories/:tag.html"
-  blog.default_extension = ".markdown"
-  blog.layout = "layouts/blog"
-end
 
-activate :directory_indexes

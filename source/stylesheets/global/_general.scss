@@ -1,5 +1,11 @@
 @import "compass/css3/transition";
 
+small {
+  color: #ddd;
+  font-style: italic;
+  font-size: .5em;
+}
+
 a {
   @include transition(color .25s $easing);
 
