@@ -1,6 +1,7 @@
 // Vendor
 @import "susy";
 @import "modular-scale";
+@import "vendor/animate";
 
 // Mixins
 @import "lib/image-2x";
@@ -15,7 +16,6 @@
 @import "global/layout";
 @import "global/icons";
 @import "global/buttons";
-@import "global/animations";
 
 // Component styles
 @import "components/header";
@@ -27,4 +27,4 @@
 @import "components/email";
 
 // Page styles
-@import "pages/work";
+//@import "pages/work";
