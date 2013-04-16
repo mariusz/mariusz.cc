@@ -31,6 +31,14 @@
     &:hover { opacity: .8; }
   }
 
+  .sketch, .screenshot {
+    @include span-columns(12);
+
+    img {
+      max-width: 100%;
+    }
+  }
+
   .two > img {
     @include span-columns(6);
 
