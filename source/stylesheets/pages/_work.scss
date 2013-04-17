@@ -38,6 +38,8 @@
 
     @media only screen and (min-width: 30em) {
       @include span-columns(12);
+      @include pre(0);
+      @include post(0);
     }
 
     img {
@@ -51,6 +53,8 @@
     @include post(1);
 
     @media only screen and (min-width: 30em) {
+      @include pre(0);
+      @include post(0);
       @include span-columns(6);
 
       &:last-child {
