@@ -17,7 +17,7 @@ $ ->
 
 
   $('[role=navigation] a, .teaser .button').click ->
-    sectionName = $('body').find($(this).attr("href"))
+    sectionName = $('body').find($(this).attr("href").split("/").pop())
 
     $('html, body').animate(
       scrollTop: sectionName.offset().top
