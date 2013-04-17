@@ -32,7 +32,13 @@
   }
 
   .sketch, .screenshot {
-    @include span-columns(12);
+    @include span-columns(10);
+    @include pre(1);
+    @include post(1);
+
+    @media only screen and (min-width: 30em) {
+      @include span-columns(12);
+    }
 
     img {
       max-width: 100%;
@@ -40,14 +46,22 @@
   }
 
   .two > img {
-    @include span-columns(6);
+    @include span-columns(10);
+    @include pre(1);
+    @include post(1);
 
-    &:last-child {
-      @include span-columns(6 omega);
+    @media only screen and (min-width: 30em) {
+      @include span-columns(6);
+
+      &:last-child {
+        @include span-columns(6 omega);
+      }
     }
   }
 
   .see-live {
+    @include clearfix;
+    @include span-columns(12);
     margin: 0;
     padding: 50px 0;
     text-align: center;
