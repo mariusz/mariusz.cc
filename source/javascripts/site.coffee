@@ -25,7 +25,7 @@ $ ->
 
     return false
 
-  $('.contact .button').click ->
+  $('.contact-me .button').click ->
     mixpanel.track('Contact button clicked')
 
   $(document).ready ->
