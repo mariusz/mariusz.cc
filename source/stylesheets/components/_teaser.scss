@@ -24,25 +24,24 @@
   }
 
   h1 {
-    font-weight: 700;
-    letter-spacing: .1em;
+    font-weight: 300;
     line-height: 1.125;
-    font-size: 18px;
+    font-size: ms(1);
     text-transform: uppercase;
 
-    @media only screen and (min-width: 30em) {
-      font-size: ms(1.25);
+    @media only screen and (min-width: 40em) {
+      font-size: ms(2);
     }
   }
 
   .design-and-build {
-    font-size: 2em;
+    font-size: 1.75em;
     display: block;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
 
     @media only screen and (min-width: 40em) { 
-      font-size: 3em;
+      font-size: 2em;
       letter-spacing: .05em;
     }
   }
