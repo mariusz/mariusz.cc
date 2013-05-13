@@ -4,6 +4,7 @@
 input[type=submit],
 button {
   @include transition(background-color .5s $easing);
+  @include box-shadow(0 5px 0 darken($button-color, 10%));
 
   border-radius: .25em;
   background: $button-color;
@@ -19,6 +20,7 @@ button {
   -webkit-font-smoothing: antialiased; 
 
   &:hover {
+    @include box-shadow(0 5px 0 $button-color);
     background: lighten($button-color, 5%);
     color: $off-white;
   }
