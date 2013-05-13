@@ -59,12 +59,8 @@
     font-weight: normal;
     font-style: italic;
   }
+}
 
-  .button {
-    font-size: 1.25em;
-
-    &:hover {
-      background: darken($text-color, 10%);
-    }
-  }
+.teaser-button {
+  font-size: 1.25em;
 }
