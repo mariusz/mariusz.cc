@@ -27,7 +27,7 @@
     font-weight: 300;
     line-height: 1.125;
     font-size: ms(1);
-    text-transform: uppercase;
+    letter-spacing: -.05em;
 
     @media only screen and (min-width: 40em) {
       font-size: ms(2);
@@ -39,6 +39,7 @@
     display: block;
     font-weight: 700;
     text-transform: uppercase;
+    line-height: 1.125;
 
     @media only screen and (min-width: 40em) { 
       font-size: 2em;
@@ -61,7 +62,6 @@
 
   .button {
     font-size: 1.25em;
-    background: $text-color;
 
     &:hover {
       background: darken($text-color, 10%);
