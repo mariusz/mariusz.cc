@@ -43,8 +43,11 @@
 
     @media only screen and (min-width: 40em) { 
       font-size: 2em;
-      letter-spacing: .05em;
     }
+  }
+
+  .amp {
+    text-transform: none;
   }
 
   .actions {
