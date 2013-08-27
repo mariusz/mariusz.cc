@@ -5,7 +5,22 @@ title: Let's create something awesome together
 = partial "layouts/header"
 
 .contact-form
-  .typeform-widget{data: {url: "https://mariusz.typeform.com/to/b2y68k", text: "Inquiry form"}, style: "width:100%;height:500px;"}
-  :javascript
-    (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()
+  .wufoo#wufoo-z7x3p3
+    Fill out my <a href="http://mariuszciesla.wufoo.com/forms/z7x3p3">online form</a>.
+
+    :javascript
+      var z7x3p3;(function(d, t) {
+      var s = d.createElement(t), options = {
+      'userName':'mariuszciesla', 
+      'formHash':'z7x3p3', 
+      'autoResize':true,
+      'height':'557',
+      'async':true,
+      'header':'show'};
+      s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+      s.onload = s.onreadystatechange = function() {
+      var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+      try { z7x3p3 = new WufooForm();z7x3p3.initialize(options);z7x3p3.display(); } catch (e) {}};
+      var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+      })(document, 'script');
 
