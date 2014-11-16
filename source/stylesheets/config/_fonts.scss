@@ -1,0 +1,46 @@
+$base-font-size: 1.5em;
+$ms-ratio: 1.25;
+$line-height: 1.5; 
+$header-line-height: 1.25;
+
+body {
+  font-family: "faricy-new-web", sans-serif;
+  font-size: 100%;
+  font-weight: 500;
+  line-height: $line-height;
+
+  // Fix fonts
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+
+  // Ligatures
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga", "dlig";
+  -webkit-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig";
+}
+
+h1, h2, h3 {
+  line-height: $header-line-height;
+}
+
+h1 {
+  font-size: ms(2, $base-font-size, $ms-ratio);
+}
+
+h2 {
+  font-size: ms(1, $base-font-size, $ms-ratio);
+}
+
+h3 {
+  font-size: $base-font-size;
+}
+
+.amp {
+  font-family: "garvis-pro", serif;
+  font-style: italic;
+  font-weight: normal;
+}

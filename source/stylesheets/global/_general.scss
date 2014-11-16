@@ -1,0 +1,31 @@
+@import "compass/css3/transition";
+
+small {
+  color: #ddd;
+  font-style: italic;
+  font-size: .5em;
+}
+
+a {
+  @include transition(color .25s $easing);
+
+  text-decoration: none;
+  color: $button-color;
+
+  &:hover {
+    color: darken($button-color, 20%);
+  }
+}
+
+.section-header {
+  text-align: center;
+  padding: 100px 0 50px;
+
+  h2 {
+    font-size: 1.25em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: lighten($text-color, 20%);
+    margin: 0;
+  }
+}

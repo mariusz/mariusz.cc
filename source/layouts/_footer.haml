@@ -1,0 +1,28 @@
+%footer{role: "footer"}
+  %nav
+    %ul
+      %li
+        = link_to "//twitter.com/dotmariusz" do
+          %i.icon.icon-twitter
+      %li
+        = link_to "//dribbble.com/mariusz" do
+          %i.icon.icon-dribbble
+      %li
+        = link_to "//pinterest.com/mariusz" do
+          %i.icon.icon-pinterest
+      %li
+        = link_to "//alpha.app.net/mariusz" do
+          %i.icon.icon-app-net
+      %li
+        = link_to "//plus.google.com/104890454770498071826/posts" do
+          %i.icon.icon-gplus
+
+  %p
+    &copy; 2013 Mariusz Ciesla.
+    = link_to "See the source.", "https://github.com/mariusz/mariusz.cc"
+
+  %p
+    %a{href: "https://twitter.com/share", class: "twitter-share-button", data: { via: "dotmariusz" }} Tweet
+
+    :javascript
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');

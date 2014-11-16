@@ -1,0 +1,7 @@
+.work
+  %header 
+    %h2 Latest case study
+
+  - blog.articles[0..5].each do |article|
+    .project
+      = article.summary

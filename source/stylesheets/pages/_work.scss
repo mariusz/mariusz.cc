@@ -1,0 +1,101 @@
+@import "compass/css3/transition";
+
+.work {
+  img {
+    border-radius: .25em;
+  }
+
+  .wrap {
+    @include container;
+    padding: 0 0 100px;
+  }
+
+  header {
+    @extend .section-header;
+  }
+
+  .text {
+    @include span-columns(8);
+    @include pre(2);
+
+    margin-bottom: 100px;
+    font-size: 1.25em;
+    text-align: justify;
+  }
+
+  .sketch { 
+    @include transition(opacity .25s $easing);
+    opacity: .5;
+    text-align: center; 
+    
+    &:hover { opacity: .8; }
+  }
+
+  .sketch, .screenshot {
+    @include span-columns(10);
+    @include pre(1);
+    @include post(1);
+
+    @media only screen and (min-width: 30em) {
+      @include span-columns(12);
+      @include pre(0);
+      @include post(0);
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .two > img {
+    @include span-columns(10);
+    @include pre(1);
+    @include post(1);
+
+    @media only screen and (min-width: 30em) {
+      @include pre(0);
+      @include post(0);
+      @include span-columns(6);
+
+      &:last-child {
+        @include span-columns(6 omega);
+      }
+    }
+  }
+
+  .see-live {
+    @include clearfix;
+    @include span-columns(12);
+    margin: 0;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .button {
+    padding: .5em 2em;
+    font-size: 1.25em;
+  }
+
+  .centered {
+    text-align: center;
+  }
+}
+
+.varsovie-roasted {
+  background: #2d2211 image-url("work/varsovie-roasted/background.jpg");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-size: cover;
+  color: #F5DCA1;
+
+  header h2 { color: $off-white; }
+}
+
+.anynines {
+  background: #505D78;
+  color: $off-white;
+
+  .button {
+    background: #e7843d;
+  }
+}

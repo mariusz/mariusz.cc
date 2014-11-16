@@ -1,0 +1,20 @@
+.contact {
+  [role=banner] {
+    margin: 50px 0;
+    padding: 0;
+  }
+
+  h1 {
+    top: 0;
+    margin-bottom: 25px;
+  }
+
+  .contact-form {
+    background: #f2f2f2;
+    padding: 50px 0;
+  }
+
+  .wufoo {
+    @include container;
+  }
+}

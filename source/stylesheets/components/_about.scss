@@ -1,0 +1,46 @@
+@import "compass/css3/transition";
+
+.about {
+  @include transition(background .25s $easing);
+
+  background-color: #111F2C;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 50px;
+  min-height: 400px;
+
+  @media only screen and (min-width: 800px) {
+    background-image: image-url("photo.jpg");
+    background-attachment: fixed;
+  }
+
+  .content {
+    @include container;
+  }
+
+  header {
+    @extend .section-header;
+  }
+
+  h2 {
+    color: #fff;
+  }
+
+  p {
+    font-size: 1.25em;
+    font-weight: 300;
+
+    @media only screen and (min-width: 600px) {
+      font-size: 1.5em;
+    }
+  }
+  
+  .description {
+    @include span-columns(12);
+
+    @media only screen and (min-width: 800px) {
+      @include span-columns(6);
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import "compass/css3/border-radius";
+@import "compass/css3/transition";
+
+$twitter-blue: #00aced;
+$pinterest-red: #CB2027;
+$dribbble-pink: #E24D87;
+$gplus-red: #D64A2E;
+$app-net-gray: #898D90;
+
+[role=footer] {
+  @include container;
+
+  color: lighten($text-color, 50%);
+  text-align: center;
+  font-size: 75%;
+  padding-bottom: 50px;
+
+  li {
+    display: inline;
+  }
+
+  .icon {
+    @include transition(background-color, color .5s $easing);
+    @include border-radius(5px);
+
+    color: lighten($text-color, 50%);
+    display: inline-block;
+    padding: 18px 20px;
+    font-size: 14px;
+
+    -webkit-font-smoothing: antialiased;
+
+    &:hover {
+      color: $off-white;
+    }
+  }
+
+  .icon-twitter:hover { background: $twitter-blue; }
+  .icon-pinterest:hover { background: $pinterest-red; }
+  .icon-dribbble:hover { background: $dribbble-pink; }
+  .icon-app-net:hover { background: $app-net-gray; }
+  .icon-gplus:hover { background: $gplus-red; } 
+
+  p {
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+}
