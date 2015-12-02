@@ -8,7 +8,7 @@ require 'susy'
 require 'animation'
 
 after_configuration do
-  sprockets.append_path File.join "#{root}", "source", "components"
+  sprockets.append_path File.join "#{root}", "components"
 end
 
 # Change Compass configuration
