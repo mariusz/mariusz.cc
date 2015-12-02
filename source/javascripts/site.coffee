@@ -1,19 +1,22 @@
-#= require vendor/jquery.jribbble.min
+#= require jquery/dist/jquery.min
+#= require jribbble/dist/jribbble.min
 
 $ ->
+  $.jribbble.setToken '2436518deac736cbcdf145c359fb78db1ea983e46701fbf01496df7476565866';
+
   getDribbbleShots = ->
-    $.jribbble.getShotsByPlayerId 'mariusz', (playerShots) -> 
+    $.jribbble.users('mariusz').shots({per_page: 8}).then (playerShots) -> 
       html = []
 
-      $.each playerShots.shots, (i, shot) ->
+      $.each playerShots, (i, shot) ->
+        console.log(shot)
         html.push '<li>'
-        html.push '<a href="' + shot.url + '">'
-        html.push '<img src="' + shot.image_teaser_url + '" '
+        html.push '<a href="' + shot.html_url + '">'
+        html.push '<img src="' + shot.images.teaser + '" '
         html.push 'alt="' + shot.title + '"></a></li>'
         html.push '</li>'
 
       $('#dribbble_shots').html html.join('')
-    , page: 1, per_page: 8
 
 
   $('[role=navigation] a, .teaser .button').click ->

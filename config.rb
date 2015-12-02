@@ -7,6 +7,10 @@
 require 'susy'
 require 'animation'
 
+after_configuration do
+  sprockets.append_path File.join "#{root}", "source", "components"
+end
+
 # Change Compass configuration
 # compass_config do |config|
 #   config.output_style = :compact
