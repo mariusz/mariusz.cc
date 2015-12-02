@@ -21,3 +21,6 @@ tmp/
 
 # Screw gravity!
 build.tgz
+
+# Ignore Bower components
+/source/components
