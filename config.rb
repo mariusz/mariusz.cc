@@ -100,6 +100,8 @@ activate :deploy do |deploy|
   deploy.deploy_method = :rsync
   deploy.host          = 'srv.mariusz.cc'
   deploy.path          = '/var/www/mariusz.cc'
+  deploy.build_before  = true # default: false
+  deploy.user          = 'mariusz'
   # Optional Settings
   # deploy.user  = 'tvaughan' # no default
   # deploy.port  = 5309 # ssh port, default: 22
