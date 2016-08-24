@@ -52,6 +52,19 @@ end
 #   end
 # end
 
+activate :deploy do |deploy|
+  deploy.method        = :rsync
+  deploy.host          = 'srv.mariusz.cc'
+  deploy.path          = '/var/www/mariusz.cc'
+  deploy.build_before  = true # default: false
+  deploy.user          = 'mariusz'
+  # Optional Settings
+  # deploy.user  = 'tvaughan' # no default
+  # deploy.port  = 5309 # ssh port, default: 22
+  # deploy.clean = true # remove orphaned files on remote host, default: false
+  # deploy.flags = '-rltgoDvzO --no-p --del' # add custom flags, default: -avz
+end
+
 helpers do
   def page_class
     current_resource.url.sub('.html','').gsub('/','-')
@@ -94,19 +107,6 @@ configure :build do
 
   # Or use a different image path
   # set :http_path, "/Content/images/"
-end
-
-activate :deploy do |deploy|
-  deploy.deploy_method = :rsync
-  deploy.host          = 'srv.mariusz.cc'
-  deploy.path          = '/var/www/mariusz.cc'
-  deploy.build_before  = true # default: false
-  deploy.user          = 'mariusz'
-  # Optional Settings
-  # deploy.user  = 'tvaughan' # no default
-  # deploy.port  = 5309 # ssh port, default: 22
-  # deploy.clean = true # remove orphaned files on remote host, default: false
-  # deploy.flags = '-rltgoDvzO --no-p --del' # add custom flags, default: -avz
 end
 
 
