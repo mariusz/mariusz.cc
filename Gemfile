@@ -10,3 +10,6 @@ gem "compass"
 gem "susy"
 gem "modular-scale"
 gem "animation"
+
+# Deploying stuff
+gem "capistrano"
