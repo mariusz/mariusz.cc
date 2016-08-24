@@ -1,0 +1,25 @@
+{
+  "name": "mariusz.cc",
+  "homepage": "https://github.com/mariusz/mariusz.cc",
+  "authors": [
+    "Mariusz Ciesla <mariusz@dotmariusz.net>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0"
+  },
+  "devDependencies": {
+    "jribbble": "^2.0.4"
+  }
+}

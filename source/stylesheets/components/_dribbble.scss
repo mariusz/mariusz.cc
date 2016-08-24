@@ -5,6 +5,10 @@
     @include container(80%);
   }
 
+  @media only screen and (min-width: 60em) {
+    @include container(59em);
+  }
+
   margin-top: $base-font-size;
   padding-bottom: 50px;
 
@@ -23,7 +27,7 @@
         @include span(6 of 12);
 
         &:nth-child(2n) {
-          @include span(6 of 12);
+          @include last(6 of 12);
         }
       }
   
@@ -35,7 +39,7 @@
         }
 
         &:nth-child(3n) {
-          @include span(4 of 12);
+          @include last(4 of 12);
         }
         
       }
@@ -53,7 +57,7 @@
         }
 
         &:nth-child(4n) {
-          @include span(3 of 12);
+          @include last(3 of 12);
         }
       }
     }
