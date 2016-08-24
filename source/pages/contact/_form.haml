@@ -1,10 +1,24 @@
-%form{action: "email.php", method: "post"}
+%form{action: "https://formkeep.com/f/e5bf280899d4", "accept-charset": "utf-8", method: "post"}
   %p
     %label Your name
     %input{type: "text", name: "name", id: "name"}
   %p
     %label Your email
     %input{type: "email", name: "email", id: "email"}
+  %p
+    %label 
+      Your budget
+      %span.hint If you're not sure, it's okay, just guesstimate
+    %select{name: "budget", id: "budget"}
+      %option{value: "low budget"} Low budget + equity
+      %option{value: "5-10k"} $5.000 - $10.000
+      %option{value: "10-25k"} $10.000 - $25.000
+      %option{value: "25-50k"} $25.000 - $50.000
+      %option{value: "50k+"} $50.000+
   %p.long-text
-    %label How can I help you?
-    %textarea{rows: "20", cols: "80"}
+    %label
+      How can I help you?
+      %span.hint e.g. We recently got funded, we need a designer to help us redesign our MVP into a real product.
+    %textarea{rows: "8", cols: "80"}
+  %p.actions
+    %button Let's do it!

@@ -9,12 +9,62 @@
     margin-bottom: 25px;
   }
 
+  .contact-intro {
+    text-align: center;
+
+    p {
+      color: lighten($text-color, 10%);
+    }
+  }
+
   .contact-form {
     background: #f2f2f2;
     padding: 50px 0;
+
+    form {
+      padding-top: 50px;
+    }
   }
 
-  .wufoo {
+  p {
+    margin: 0;
+    padding-bottom: 2em;
+  }
+
+  label {
+    display: block;
+    padding-bottom: .5em;
+    color: lighten($text-color, 10%);
+  }
+
+  .hint {
+    display: block;
+    font-size: .8em;
+    color: lighten($text-color, 40%);
+  }
+
+  input, select, textarea {
+    width: 100%;
+    padding: .5em;
+    font-size: 1.125em;
+  }
+
+  .contact-wrapper {
     @include container;
+  }
+
+  .actions {
+    button {
+      font-size: 1.25em;
+    }
+  }
+
+  .contact-form-wrapper {
+    width: 80%;
+    margin: 0 auto;
+
+    @media only screen and (min-width: 72em) {
+      width: 60%;
+    }
   }
 }
