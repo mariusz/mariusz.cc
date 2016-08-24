@@ -8,7 +8,7 @@ $gplus-red: #D64A2E;
 $app-net-gray: #898D90;
 
 [role=footer] {
-  @include container;
+  @include container(80%);
 
   color: lighten($text-color, 50%);
   text-align: center;

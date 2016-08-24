@@ -96,4 +96,15 @@ configure :build do
   # set :http_path, "/Content/images/"
 end
 
+activate :deploy do |deploy|
+  deploy.deploy_method = :rsync
+  deploy.host          = 'srv.mariusz.cc'
+  deploy.path          = '/var/www/mariusz.cc'
+  # Optional Settings
+  # deploy.user  = 'tvaughan' # no default
+  # deploy.port  = 5309 # ssh port, default: 22
+  # deploy.clean = true # remove orphaned files on remote host, default: false
+  # deploy.flags = '-rltgoDvzO --no-p --del' # add custom flags, default: -avz
+end
+
 

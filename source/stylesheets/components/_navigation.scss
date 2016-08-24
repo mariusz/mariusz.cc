@@ -8,16 +8,20 @@ nav, [role=navigation] {
 }
 
 [role=navigation] {
-  @include container;
+  @include container(90%);
+
+  @media only screen and (min-width: 768px) {
+    @include container(80%);
+  }
 
   ul {
-    @include span-columns(12);
+    @include span(12 of 12);
 
     text-align: center;
 
     @media only screen and (min-width: 600px) {
-      @include span-columns(8);
-      @include pad(2,2);
+      @include span(8 of 12);
+      @include pad(2 of 12);
     }
   }
 

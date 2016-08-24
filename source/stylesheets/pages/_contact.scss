@@ -50,7 +50,7 @@
   }
 
   .contact-wrapper {
-    @include container;
+    @include container(80%);
   }
 
   .actions {

@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem "middleman", "~>3.0.11"
+gem "middleman", "~>3.2"
 gem "middleman-sprockets"
 gem "redcarpet"
 
@@ -12,4 +12,4 @@ gem "modular-scale"
 gem "animation"
 
 # Deploying stuff
-gem "capistrano"
+gem "middleman-deploy", "~>1.0"

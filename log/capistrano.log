@@ -1,0 +1,212 @@
+# Logfile created on 2016-08-24 23:31:55 +0200 by logger.rb/47272
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-08-24 23:31:55 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-08-24 23:32:05 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-08-24 23:33:04 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [8eb2483f] Running /usr/bin/env mkdir -p /tmp as mariusz@srv.mariusz.cc
+ DEBUG [8eb2483f] Command: /usr/bin/env mkdir -p /tmp
+  INFO [8eb2483f] Finished in 1.024 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-mariusz.cc-production-mariusz.sh 0.0%
+  INFO Uploading /tmp/git-ssh-mariusz.cc-production-mariusz.sh 100.0%
+  INFO [f7dfb333] Running /usr/bin/env chmod 700 /tmp/git-ssh-mariusz.cc-production-mariusz.sh as mariusz@srv.mariusz.cc
+ DEBUG [f7dfb333] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mariusz.cc-production-mariusz.sh
+  INFO [f7dfb333] Finished in 0.093 seconds with exit status 0 (successful).
+  INFO [e40a82dc] Running /usr/bin/env git ls-remote --heads git@github.com:mariusz/mariusz.cc.git as mariusz@srv.mariusz.cc
+ DEBUG [e40a82dc] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mariusz.cc-production-mariusz.sh" ; /usr/bin/env git ls-remote --heads git@github.com:mariusz/mariusz.cc.git )
+ DEBUG [e40a82dc] 	/usr/bin/env: 
+ DEBUG [e40a82dc] 	git
+ DEBUG [e40a82dc] 	: No such file or directory
+ DEBUG [e40a82dc] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-08-24 23:34:18 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [20b29655] Running /usr/bin/env mkdir -p /tmp as mariusz@srv.mariusz.cc
+ DEBUG [20b29655] Command: /usr/bin/env mkdir -p /tmp
+  INFO [20b29655] Finished in 0.574 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-mariusz.cc-production-mariusz.sh 0.0%
+  INFO Uploading /tmp/git-ssh-mariusz.cc-production-mariusz.sh 100.0%
+  INFO [ef688205] Running /usr/bin/env chmod 700 /tmp/git-ssh-mariusz.cc-production-mariusz.sh as mariusz@srv.mariusz.cc
+ DEBUG [ef688205] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mariusz.cc-production-mariusz.sh
+  INFO [ef688205] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [ed307ca0] Running /usr/bin/env git ls-remote --heads git@github.com:mariusz/mariusz.cc.git as mariusz@srv.mariusz.cc
+ DEBUG [ed307ca0] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mariusz.cc-production-mariusz.sh" ; /usr/bin/env git ls-remote --heads git@github.com:mariusz/mariusz.cc.git )
+ DEBUG [ed307ca0] 	Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
+ DEBUG [ed307ca0] 	2545ac78c544d3ac06eb721c065cda9fff03ba62	refs/heads/2.0
+d7bc643f0c106dc39fe4ea870ca9a4672aeb3a19	refs/heads/gh-pages
+5168413feae83f892986769400ca4b5782fc9f0b	refs/heads/master
+  INFO [ed307ca0] Finished in 1.306 seconds with exit status 0 (successful).
+  INFO [aa2c345c] Running /usr/bin/env mkdir -p /var/www/mariusz.cc/shared /var/www/mariusz.cc/releases as mariusz@srv.mariusz.cc
+ DEBUG [aa2c345c] Command: /usr/bin/env mkdir -p /var/www/mariusz.cc/shared /var/www/mariusz.cc/releases
+ DEBUG [aa2c345c] 	mkdir: 
+ DEBUG [aa2c345c] 	cannot create directory ‘/var/www/mariusz.cc/shared’
+ DEBUG [aa2c345c] 	: Permission denied
+ DEBUG [aa2c345c] 	
+ DEBUG [aa2c345c] 	mkdir: 
+ DEBUG [aa2c345c] 	cannot create directory ‘/var/www/mariusz.cc/releases’
+ DEBUG [aa2c345c] 	: Permission denied
+ DEBUG [aa2c345c] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-08-24 23:34:39 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [9518f7f1] Running /usr/bin/env mkdir -p /tmp as mariusz@srv.mariusz.cc
+ DEBUG [9518f7f1] Command: /usr/bin/env mkdir -p /tmp
+  INFO [9518f7f1] Finished in 0.569 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-mariusz.cc-production-mariusz.sh 0.0%
+  INFO Uploading /tmp/git-ssh-mariusz.cc-production-mariusz.sh 100.0%
+  INFO [77c79c48] Running /usr/bin/env chmod 700 /tmp/git-ssh-mariusz.cc-production-mariusz.sh as mariusz@srv.mariusz.cc
+ DEBUG [77c79c48] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mariusz.cc-production-mariusz.sh
+  INFO [77c79c48] Finished in 0.093 seconds with exit status 0 (successful).
+  INFO [c87a07c0] Running /usr/bin/env git ls-remote --heads git@github.com:mariusz/mariusz.cc.git as mariusz@srv.mariusz.cc
+ DEBUG [c87a07c0] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mariusz.cc-production-mariusz.sh" ; /usr/bin/env git ls-remote --heads git@github.com:mariusz/mariusz.cc.git )
+ DEBUG [c87a07c0] 	2545ac78c544d3ac06eb721c065cda9fff03ba62	refs/heads/2.0
+d7bc643f0c106dc39fe4ea870ca9a4672aeb3a19	refs/heads/gh-pages
+5168413feae83f892986769400ca4b5782fc9f0b	refs/heads/master
+  INFO [c87a07c0] Finished in 1.454 seconds with exit status 0 (successful).
+  INFO [1fda5627] Running /usr/bin/env mkdir -p /var/www/mariusz.cc/shared /var/www/mariusz.cc/releases as mariusz@srv.mariusz.cc
+ DEBUG [1fda5627] Command: /usr/bin/env mkdir -p /var/www/mariusz.cc/shared /var/www/mariusz.cc/releases
+ DEBUG [1fda5627] 	mkdir: 
+ DEBUG [1fda5627] 	cannot create directory ‘/var/www/mariusz.cc/shared’
+ DEBUG [1fda5627] 	: Permission denied
+ DEBUG [1fda5627] 	
+ DEBUG [1fda5627] 	mkdir: 
+ DEBUG [1fda5627] 	cannot create directory ‘/var/www/mariusz.cc/releases’
+ DEBUG [1fda5627] 	: Permission denied
+ DEBUG [1fda5627] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-08-24 23:35:59 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [69393a1f] Running /usr/bin/env mkdir -p /tmp as mariusz@srv.mariusz.cc
+ DEBUG [69393a1f] Command: /usr/bin/env mkdir -p /tmp
+  INFO [69393a1f] Finished in 0.565 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-mariusz.cc-production-mariusz.sh 0.0%
+  INFO Uploading /tmp/git-ssh-mariusz.cc-production-mariusz.sh 100.0%
+  INFO [a910fc9c] Running /usr/bin/env chmod 700 /tmp/git-ssh-mariusz.cc-production-mariusz.sh as mariusz@srv.mariusz.cc
+ DEBUG [a910fc9c] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mariusz.cc-production-mariusz.sh
+  INFO [a910fc9c] Finished in 0.094 seconds with exit status 0 (successful).
+  INFO [191b2260] Running /usr/bin/env git ls-remote --heads git@github.com:mariusz/mariusz.cc.git as mariusz@srv.mariusz.cc
+ DEBUG [191b2260] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mariusz.cc-production-mariusz.sh" ; /usr/bin/env git ls-remote --heads git@github.com:mariusz/mariusz.cc.git )
+ DEBUG [191b2260] 	2545ac78c544d3ac06eb721c065cda9fff03ba62	refs/heads/2.0
+d7bc643f0c106dc39fe4ea870ca9a4672aeb3a19	refs/heads/gh-pages
+5168413feae83f892986769400ca4b5782fc9f0b	refs/heads/master
+  INFO [191b2260] Finished in 3.397 seconds with exit status 0 (successful).
+  INFO [3c17f9a9] Running /usr/bin/env mkdir -p /var/www/mariusz.cc/shared /var/www/mariusz.cc/releases as mariusz@srv.mariusz.cc
+ DEBUG [3c17f9a9] Command: /usr/bin/env mkdir -p /var/www/mariusz.cc/shared /var/www/mariusz.cc/releases
+ DEBUG [3c17f9a9] 	mkdir: 
+ DEBUG [3c17f9a9] 	cannot create directory ‘/var/www/mariusz.cc/shared’
+ DEBUG [3c17f9a9] 	: Permission denied
+ DEBUG [3c17f9a9] 	
+ DEBUG [3c17f9a9] 	mkdir: 
+ DEBUG [3c17f9a9] 	cannot create directory ‘/var/www/mariusz.cc/releases’
+ DEBUG [3c17f9a9] 	: Permission denied
+ DEBUG [3c17f9a9] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-08-24 23:37:01 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [7c9b4211] Running /usr/bin/env mkdir -p /tmp as mariusz@srv.mariusz.cc
+ DEBUG [7c9b4211] Command: /usr/bin/env mkdir -p /tmp
+  INFO [7c9b4211] Finished in 0.573 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-mariusz.cc-production-mariusz.sh 0.0%
+  INFO Uploading /tmp/git-ssh-mariusz.cc-production-mariusz.sh 100.0%
+  INFO [bdcfe5db] Running /usr/bin/env chmod 700 /tmp/git-ssh-mariusz.cc-production-mariusz.sh as mariusz@srv.mariusz.cc
+ DEBUG [bdcfe5db] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mariusz.cc-production-mariusz.sh
+  INFO [bdcfe5db] Finished in 0.095 seconds with exit status 0 (successful).
+  INFO [8b343577] Running /usr/bin/env git ls-remote --heads git@github.com:mariusz/mariusz.cc.git as mariusz@srv.mariusz.cc
+ DEBUG [8b343577] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mariusz.cc-production-mariusz.sh" ; /usr/bin/env git ls-remote --heads git@github.com:mariusz/mariusz.cc.git )
+ DEBUG [8b343577] 	Warning: Permanently added the RSA host key for IP address '192.30.253.113' to the list of known hosts.
+ DEBUG [8b343577] 	2545ac78c544d3ac06eb721c065cda9fff03ba62	refs/heads/2.0
+d7bc643f0c106dc39fe4ea870ca9a4672aeb3a19	refs/heads/gh-pages
+5168413feae83f892986769400ca4b5782fc9f0b	refs/heads/master
+  INFO [8b343577] Finished in 3.251 seconds with exit status 0 (successful).
+  INFO [13283262] Running /usr/bin/env mkdir -p /var/www/mariusz.cc/shared /var/www/mariusz.cc/releases as mariusz@srv.mariusz.cc
+ DEBUG [13283262] Command: /usr/bin/env mkdir -p /var/www/mariusz.cc/shared /var/www/mariusz.cc/releases
+ DEBUG [13283262] 	mkdir: 
+ DEBUG [13283262] 	cannot create directory ‘/var/www/mariusz.cc/shared’
+ DEBUG [13283262] 	: Permission denied
+ DEBUG [13283262] 	
+ DEBUG [13283262] 	mkdir: 
+ DEBUG [13283262] 	cannot create directory ‘/var/www/mariusz.cc/releases’
+ DEBUG [13283262] 	: Permission denied
+ DEBUG [13283262] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-08-24 23:39:01 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [2a5f758c] Running /usr/bin/env mkdir -p /tmp as mariusz@srv.mariusz.cc
+ DEBUG [2a5f758c] Command: /usr/bin/env mkdir -p /tmp
+  INFO [2a5f758c] Finished in 0.573 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-mariusz.cc-production-mariusz.sh 0.0%
+  INFO Uploading /tmp/git-ssh-mariusz.cc-production-mariusz.sh 100.0%
+  INFO [c12324ba] Running /usr/bin/env chmod 700 /tmp/git-ssh-mariusz.cc-production-mariusz.sh as mariusz@srv.mariusz.cc
+ DEBUG [c12324ba] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mariusz.cc-production-mariusz.sh
+  INFO [c12324ba] Finished in 0.093 seconds with exit status 0 (successful).
+  INFO [df30f461] Running /usr/bin/env git ls-remote --heads git@github.com:mariusz/mariusz.cc.git as mariusz@srv.mariusz.cc
+ DEBUG [df30f461] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mariusz.cc-production-mariusz.sh" ; /usr/bin/env git ls-remote --heads git@github.com:mariusz/mariusz.cc.git )
+ DEBUG [df30f461] 	2545ac78c544d3ac06eb721c065cda9fff03ba62	refs/heads/2.0
+d7bc643f0c106dc39fe4ea870ca9a4672aeb3a19	refs/heads/gh-pages
+5168413feae83f892986769400ca4b5782fc9f0b	refs/heads/master
+  INFO [df30f461] Finished in 3.508 seconds with exit status 0 (successful).
+  INFO [5b4d01c8] Running /usr/bin/env mkdir -p /var/www/mariusz.cc/shared /var/www/mariusz.cc/releases as mariusz@srv.mariusz.cc
+ DEBUG [5b4d01c8] Command: /usr/bin/env mkdir -p /var/www/mariusz.cc/shared /var/www/mariusz.cc/releases
+  INFO [5b4d01c8] Finished in 0.093 seconds with exit status 0 (successful).
+ DEBUG [211d38ff] Running [ -f /var/www/mariusz.cc/current/REVISION ] as mariusz@srv.mariusz.cc
+ DEBUG [211d38ff] Command: [ -f /var/www/mariusz.cc/current/REVISION ]
+ DEBUG [211d38ff] Finished in 0.090 seconds with exit status 1 (failed).
+ DEBUG [ac3215cf] Running [ -f /var/www/mariusz.cc/repo/HEAD ] as mariusz@srv.mariusz.cc
+ DEBUG [ac3215cf] Command: [ -f /var/www/mariusz.cc/repo/HEAD ]
+ DEBUG [ac3215cf] Finished in 0.092 seconds with exit status 1 (failed).
+ DEBUG [71494c14] Running if test ! -d /var/www/mariusz.cc; then echo "Directory does not exist '/var/www/mariusz.cc'" 1>&2; false; fi as mariusz@srv.mariusz.cc
+ DEBUG [71494c14] Command: if test ! -d /var/www/mariusz.cc; then echo "Directory does not exist '/var/www/mariusz.cc'" 1>&2; false; fi
+ DEBUG [71494c14] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [3d6fa0b4] Running /usr/bin/env git clone --mirror git@github.com:mariusz/mariusz.cc.git /var/www/mariusz.cc/repo as mariusz@srv.mariusz.cc
+ DEBUG [3d6fa0b4] Command: cd /var/www/mariusz.cc && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mariusz.cc-production-mariusz.sh" ; /usr/bin/env git clone --mirror git@github.com:mariusz/mariusz.cc.git /var/www/mariusz.cc/repo )
+ DEBUG [3d6fa0b4] 	Cloning into bare repository '/var/www/mariusz.cc/repo'...
+  INFO [3d6fa0b4] Finished in 2.199 seconds with exit status 0 (successful).
+ DEBUG [f075caf1] Running if test ! -d /var/www/mariusz.cc/repo; then echo "Directory does not exist '/var/www/mariusz.cc/repo'" 1>&2; false; fi as mariusz@srv.mariusz.cc
+ DEBUG [f075caf1] Command: if test ! -d /var/www/mariusz.cc/repo; then echo "Directory does not exist '/var/www/mariusz.cc/repo'" 1>&2; false; fi
+ DEBUG [f075caf1] Finished in 0.112 seconds with exit status 0 (successful).
+  INFO [4e816bae] Running /usr/bin/env git remote update --prune as mariusz@srv.mariusz.cc
+ DEBUG [4e816bae] Command: cd /var/www/mariusz.cc/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mariusz.cc-production-mariusz.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [4e816bae] 	Fetching origin
+  INFO [4e816bae] Finished in 1.427 seconds with exit status 0 (successful).
+ DEBUG [b74ea91a] Running if test ! -d /var/www/mariusz.cc/repo; then echo "Directory does not exist '/var/www/mariusz.cc/repo'" 1>&2; false; fi as mariusz@srv.mariusz.cc
+ DEBUG [b74ea91a] Command: if test ! -d /var/www/mariusz.cc/repo; then echo "Directory does not exist '/var/www/mariusz.cc/repo'" 1>&2; false; fi
+ DEBUG [b74ea91a] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO [7786eb9d] Running /usr/bin/env mkdir -p /var/www/mariusz.cc/releases/20160824213906 as mariusz@srv.mariusz.cc
+ DEBUG [7786eb9d] Command: cd /var/www/mariusz.cc/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mariusz.cc-production-mariusz.sh" ; /usr/bin/env mkdir -p /var/www/mariusz.cc/releases/20160824213906 )
+  INFO [7786eb9d] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [98c642da] Running /usr/bin/env git archive master | tar -x -f - -C /var/www/mariusz.cc/releases/20160824213906 as mariusz@srv.mariusz.cc
+ DEBUG [98c642da] Command: cd /var/www/mariusz.cc/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mariusz.cc-production-mariusz.sh" ; /usr/bin/env git archive master | tar -x -f - -C /var/www/mariusz.cc/releases/20160824213906 )
+  INFO [98c642da] Finished in 0.117 seconds with exit status 0 (successful).
+ DEBUG [129d1912] Running if test ! -d /var/www/mariusz.cc/repo; then echo "Directory does not exist '/var/www/mariusz.cc/repo'" 1>&2; false; fi as mariusz@srv.mariusz.cc
+ DEBUG [129d1912] Command: if test ! -d /var/www/mariusz.cc/repo; then echo "Directory does not exist '/var/www/mariusz.cc/repo'" 1>&2; false; fi
+ DEBUG [129d1912] Finished in 0.090 seconds with exit status 0 (successful).
+ DEBUG [637a223f] Running /usr/bin/env git rev-list --max-count=1 master as mariusz@srv.mariusz.cc
+ DEBUG [637a223f] Command: cd /var/www/mariusz.cc/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mariusz.cc-production-mariusz.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [637a223f] 	5168413feae83f892986769400ca4b5782fc9f0b
+ DEBUG [637a223f] Finished in 0.090 seconds with exit status 0 (successful).
+ DEBUG [22773fb1] Running if test ! -d /var/www/mariusz.cc/releases/20160824213906; then echo "Directory does not exist '/var/www/mariusz.cc/releases/20160824213906'" 1>&2; false; fi as mariusz@srv.mariusz.cc
+ DEBUG [22773fb1] Command: if test ! -d /var/www/mariusz.cc/releases/20160824213906; then echo "Directory does not exist '/var/www/mariusz.cc/releases/20160824213906'" 1>&2; false; fi
+ DEBUG [22773fb1] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [e09cd026] Running /usr/bin/env echo "5168413feae83f892986769400ca4b5782fc9f0b" >> REVISION as mariusz@srv.mariusz.cc
+ DEBUG [e09cd026] Command: cd /var/www/mariusz.cc/releases/20160824213906 && /usr/bin/env echo "5168413feae83f892986769400ca4b5782fc9f0b" >> REVISION
+  INFO [e09cd026] Finished in 0.094 seconds with exit status 0 (successful).
+  INFO [c92706b2] Running /usr/bin/env ln -s /var/www/mariusz.cc/releases/20160824213906 /var/www/mariusz.cc/releases/current as mariusz@srv.mariusz.cc
+ DEBUG [c92706b2] Command: /usr/bin/env ln -s /var/www/mariusz.cc/releases/20160824213906 /var/www/mariusz.cc/releases/current
+  INFO [c92706b2] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [36df78d5] Running /usr/bin/env mv /var/www/mariusz.cc/releases/current /var/www/mariusz.cc as mariusz@srv.mariusz.cc
+ DEBUG [36df78d5] Command: /usr/bin/env mv /var/www/mariusz.cc/releases/current /var/www/mariusz.cc
+  INFO [36df78d5] Finished in 0.093 seconds with exit status 0 (successful).
+ DEBUG [2bb696d8] Running /usr/bin/env ls -xtr /var/www/mariusz.cc/releases as mariusz@srv.mariusz.cc
+ DEBUG [2bb696d8] Command: /usr/bin/env ls -xtr /var/www/mariusz.cc/releases
+ DEBUG [2bb696d8] 	20160824213906
+ DEBUG [2bb696d8] Finished in 0.095 seconds with exit status 0 (successful).
+ DEBUG [c4d0cc34] Running if test ! -d /var/www/mariusz.cc/releases; then echo "Directory does not exist '/var/www/mariusz.cc/releases'" 1>&2; false; fi as mariusz@srv.mariusz.cc
+ DEBUG [c4d0cc34] Command: if test ! -d /var/www/mariusz.cc/releases; then echo "Directory does not exist '/var/www/mariusz.cc/releases'" 1>&2; false; fi
+ DEBUG [c4d0cc34] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [444343d4] Running /usr/bin/env echo "Branch master (at 5168413feae83f892986769400ca4b5782fc9f0b) deployed as release 20160824213906 by mariusz" >> /var/www/mariusz.cc/revisions.log as mariusz@srv.mariusz.cc
+ DEBUG [444343d4] Command: cd /var/www/mariusz.cc/releases && /usr/bin/env echo "Branch master (at 5168413feae83f892986769400ca4b5782fc9f0b) deployed as release 20160824213906 by mariusz" >> /var/www/mariusz.cc/revisions.log
+  INFO [444343d4] Finished in 0.093 seconds with exit status 0 (successful).

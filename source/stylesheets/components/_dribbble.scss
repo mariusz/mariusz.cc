@@ -1,5 +1,9 @@
 .dribbble {
-  @include container;
+  @include container(90%);
+
+  @media only screen and (min-width: 768px) {
+    @include container(80%);
+  }
 
   margin-top: $base-font-size;
   padding-bottom: 50px;
@@ -13,43 +17,43 @@
     padding: 0;
 
     li {
-      @include span-columns(12);
+      @include span(12);
 
       @media only screen and (min-width: 201px) {
-        @include span-columns(6);
+        @include span(6 of 12);
 
         &:nth-child(2n) {
-          @include span-columns(6 omega);
+          @include span(6 of 12);
         }
       }
   
       @media only screen and (min-width: 401px) {
-        @include span-columns(4);
+        @include span(4 of 12);
 
         &:nth-child(2n) {
-          @include span-columns(4);
+          @include span(4 of 12);
         }
 
         &:nth-child(3n) {
-          @include span-columns(4 omega);
+          @include span(4 of 12);
         }
         
       }
 
 
       @media only screen and (min-width: 601px) {
-        @include span-columns(3);
+        @include span(3 of 12);
 
         &:nth-child(2n) {
-          @include span-columns(3);
+          @include span(3 of 12);
         }
 
         &:nth-child(3n) {
-          @include span-columns(3);
+          @include span(3 of 12);
         }
 
         &:nth-child(4n) {
-          @include span-columns(3 omega);
+          @include span(3 of 12);
         }
       }
     }
