@@ -30,7 +30,10 @@ $ ->
     return false
 
   $('.contact-me .button').click ->
-    mixpanel.track('Contact button clicked')
+    mixpanel.track 'Contact button clicked'
+
+  $('#btn_contact_submit').click ->
+    mixpanel.track 'Contact form submitted'
 
   $(document).ready ->
     getDribbbleShots()
