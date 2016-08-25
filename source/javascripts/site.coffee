@@ -1,5 +1,6 @@
 #= require jquery/dist/jquery.min
 #= require jribbble/dist/jribbble.min
+#= require flickity/dist/flickity.pkgd
 
 $ ->
   $.jribbble.setToken '2436518deac736cbcdf145c359fb78db1ea983e46701fbf01496df7476565866';
@@ -33,3 +34,10 @@ $ ->
 
   $(document).ready ->
     getDribbbleShots()
+
+    $('#testimonials_slider').flickity
+      contain: true
+      parallax: true
+      wrapAround: true
+      adaptiveHeight: true
+      prevNextButtons: false

@@ -41,7 +41,7 @@
   }
   
   .description {
-    @include span(12);
+    @include span(12 of 12);
 
     @media only screen and (min-width: 800px) {
       @include span(6 of 12);

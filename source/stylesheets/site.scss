@@ -2,6 +2,7 @@
 @import "susy";
 @import "modular-scale";
 @import "vendor/animate";
+@import "flickity/dist/flickity";
 
 // Mixins
 @import "lib/image-2x";
@@ -25,6 +26,7 @@
 @import "components/dribbble";
 @import "components/about";
 @import "components/email";
+@import "components/testimonials";
 
 // Page styles
 @import "pages/work";
