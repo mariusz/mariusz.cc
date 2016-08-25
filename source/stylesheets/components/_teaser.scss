@@ -66,7 +66,14 @@
 
 .teaser-button {
   font-size: 1.25em;
-  margin-right: 2em;
+  display: block;
+  margin-bottom: 2em;
+
+  @media only screen and (min-width: 48em) {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 2em;
+  }
 }
 
 .teaser-button--last {
