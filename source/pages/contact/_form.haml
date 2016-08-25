@@ -1,10 +1,10 @@
 %form{action: "https://formkeep.com/f/e5bf280899d4", "accept-charset": "utf-8", method: "post"}
   %p
     %label Your name
-    %input{type: "text", name: "name", id: "name"}
+    %input{type: "text", name: "name", id: "name", required: "true"}
   %p
     %label Your email
-    %input{type: "email", name: "email", id: "email"}
+    %input{type: "email", name: "email", id: "email", required: "true"}
   %p
     %label 
       Your budget
@@ -19,6 +19,6 @@
     %label
       How can I help you?
       %span.hint e.g. We recently got funded, we need a designer to help us redesign our MVP into a real product.
-    %textarea{rows: "8", cols: "80"}
+    %textarea{rows: "8", cols: "80", required: "true"}
   %p.actions
     %button#btn_contact_submit Let's do it!
