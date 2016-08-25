@@ -4,15 +4,14 @@
 input[type=submit],
 button {
   @include transition(background-color .5s $easing);
-  @include box-shadow(0 5px 0 darken($button-color, 10%));
+  @include box-shadow(0 5px 10px rgba(0,0,0,.2));
 
-  border-radius: .25em;
+  border-radius: .125em;
   background: $button-color;
   color: $off-white;
   padding: .5em 1em;
   font-weight: bold;
   text-decoration: none;
-  text-shadow: 0 1px 0 rgba(0,0,0,.25);
   word-wrap: nowrap;
   text-transform: uppercase;
   letter-spacing: .05em;
@@ -21,8 +20,7 @@ button {
   -webkit-font-smoothing: antialiased; 
 
   &:hover {
-    @include box-shadow(0 5px 0 darken($button-color, 15%));
-    background: lighten($button-color, 5%);
+    background: lighten($button-color, 10%);
     color: $off-white;
   }
 }
