@@ -5,6 +5,7 @@ var imagemin = require('gulp-imagemin');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var neat = require('node-neat').includePaths;
+var rsync = require('gulp-rsync');
 
 var srcDir = './source';
 var dstDir = './.tmp';
@@ -58,6 +59,14 @@ gulp.task('javascripts', function() {
     .pipe(concat('site.js'))
     .pipe(uglify())
     .pipe(gulp.dest(jsOutDir))
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('build/**')
+    .pipe(rsync({
+      hostname: 'srv.mariusz.cc',
+      destination: '/var/www/mariusz.cc'
+    }));
 });
 
 gulp.task('watch', function() {
