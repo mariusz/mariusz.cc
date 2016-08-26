@@ -64,6 +64,7 @@ gulp.task('javascripts', function() {
 gulp.task('deploy', function() {
   return gulp.src('build/**')
     .pipe(rsync({
+      root: 'build/',
       hostname: 'srv.mariusz.cc',
       destination: '/var/www/mariusz.cc'
     }));
