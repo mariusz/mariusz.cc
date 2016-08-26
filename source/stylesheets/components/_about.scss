@@ -1,8 +1,5 @@
-@import "compass/css3/transition";
-
 .about {
-  @include transition(background .25s $easing);
-
+  transition: background .25s $easing;
   background-color: #111F2C;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -11,16 +8,12 @@
   min-height: 400px;
 
   @media only screen and (min-width: 800px) {
-    background-image: image-url("photo.jpg");
+    background-image: url("/images/photo.jpg");
     background-attachment: fixed;
   }
 
   .content {
-    @include container(80%);
-  
-    @media only screen and (min-width: 60em) {
-      @include container(59em);
-    }
+    @include wrapper;
   }
 
   header {
@@ -35,16 +28,16 @@
     font-size: 1.25em;
     font-weight: 300;
 
-    @media only screen and (min-width: 600px) {
+    @include media($bp-small) {
       font-size: 1.5em;
     }
   }
   
   .description {
-    @include span(12 of 12);
+    @include span-columns(12);
 
-    @media only screen and (min-width: 800px) {
-      @include span(6 of 12);
+    @include media($bp-medium) {
+      @include span-columns(6);
     }
   }
 }

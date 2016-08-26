@@ -17,10 +17,11 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^3.1.0",
-    "flickity": "^2.0.3"
   },
   "devDependencies": {
-    "jribbble": "^2.0.4"
+    "jquery": "^3.1.0",
+    "flickity": "^2.0.3",
+    "jribbble": "^2.0.4",
+    "modular-scale": "^2.1.3"
   }
 }

@@ -3,7 +3,7 @@
   background: $off-white;
   
   .flickity-viewport {
-    @include transition(height 0.2s $easing);
+    transition: height 0.2s $easing;
     padding-bottom: 50px;
   }
 }
@@ -14,15 +14,7 @@
 }
 
 .testimonials-slider {
-  @include container(90%);
-
-  @media only screen and (min-width: 40em) {
-    @include container(80%);
-  }
-
-  @media only screen and (min-width: 60em) {
-    @include container(59em);
-  }
+  @include wrapper;
 }
 
 .testimonials-person {

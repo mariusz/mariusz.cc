@@ -1,0 +1,33 @@
+{
+  "name": "mariusz.cc",
+  "version": "1.0.0",
+  "description": "To run locally:",
+  "main": "config.ru",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "node-bourbon": "^4.2.8",
+    "node-neat": "^1.7.2"
+  },
+  "scripts": {
+    "production": "gulp build",
+    "gulp": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariusz/mariusz.cc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariusz/mariusz.cc/issues"
+  },
+  "homepage": "https://github.com/mariusz/mariusz.cc#readme"
+}

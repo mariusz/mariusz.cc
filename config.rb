@@ -4,12 +4,6 @@
 
 # Susy grids in Compass
 # First: gem install susy
-require 'susy'
-require 'animation'
-
-after_configuration do
-  sprockets.append_path File.join "#{root}", "components"
-end
 
 # Change Compass configuration
 # compass_config do |config|
@@ -52,27 +46,19 @@ end
 #   end
 # end
 
-activate :deploy do |deploy|
-  deploy.method        = :rsync
-  deploy.host          = 'srv.mariusz.cc'
-  deploy.path          = '/var/www/mariusz.cc'
-  deploy.build_before  = true # default: false
-  deploy.user          = 'mariusz'
-  # Optional Settings
-  # deploy.user  = 'tvaughan' # no default
-  # deploy.port  = 5309 # ssh port, default: 22
-  # deploy.clean = true # remove orphaned files on remote host, default: false
-  # deploy.flags = '-rltgoDvzO --no-p --del' # add custom flags, default: -avz
+activate :blog do |blog|
+  blog.prefix = "work"
 end
+
+activate :external_pipeline,
+  name: :gulp,
+  command: build? ? 'npm run production' : 'npm run gulp',
+  source: ".tmp"
 
 helpers do
   def page_class
     current_resource.url.sub('.html','').gsub('/','-')
   end
-end
-
-with_layout :work do
-  page "/work/*"
 end
 
 set :css_dir, 'stylesheets'
@@ -89,10 +75,10 @@ set :markdown,  :fenced_code_blocks => true,
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  activate :minify_css
+  # activate :minify_css
 
   # Minify Javascript on build
-  activate :minify_javascript
+  # activate :minify_javascript
 
   # Enable cache buster
   # activate :cache_buster

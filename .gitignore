@@ -9,6 +9,7 @@
 
 # Ignore the build directory
 /build
+/.tmp
 
 # Ignore Sass' cache
 /.sass-cache
@@ -24,3 +25,4 @@ build.tgz
 
 # Ignore Bower components
 /components
+/node_modules

@@ -1,5 +1,4 @@
-@import "compass/css3/font-face";
-@include font-face("icons", font-files("icons.ttf", ttf, "icons.woff", woff, "icons.svg#icons", svg), "icons.eot");
+@include font-face("icons", "/fonts/icons", normal, $asset-pipeline: false, $file-formats: eot ttf woff svg);
 
 .icon {
   font-family: "icons";

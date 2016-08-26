@@ -1,3 +1,28 @@
+$bp-small: 40em;
+$bp-medium: 48em;
+$bp-large: 60em;
+$bp-xl: 72em;
+
+@mixin wrapper($xs: 90%, $small: 80%, $medium: 80%, $large: 59em, $xl: 59em) {
+  @include outer-container($xs);
+
+  @include media($bp-small) {
+    @include outer-container($small);
+  }
+
+  @include media($bp-medium) {
+    @include outer-container($medium);
+  }
+
+  @include media($bp-large) {
+    @include outer-container($large);
+  }
+
+  @include media($bp-xl) {
+    @include outer-container($xl);
+  }
+}
+
 .page {
-  @include container(80%);
+  @include wrapper;
 }

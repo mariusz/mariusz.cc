@@ -1,8 +1,9 @@
 // Vendor
-@import "susy";
+@import "bourbon";
+@import "neat";
 @import "modular-scale";
 @import "vendor/animate";
-@import "flickity/dist/flickity";
+@import "flickity";
 
 // Mixins
 @import "lib/image-2x";
@@ -31,3 +32,4 @@
 // Page styles
 @import "pages/work";
 @import "pages/contact";
+@import "pages/projects";

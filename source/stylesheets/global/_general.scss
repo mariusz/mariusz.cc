@@ -1,5 +1,3 @@
-@import "compass/css3/transition";
-
 small {
   color: #ddd;
   font-style: italic;
@@ -7,8 +5,7 @@ small {
 }
 
 a {
-  @include transition(color .25s $easing);
-
+  transition: color .25s $easing;
   text-decoration: none;
   color: $button-color;
 

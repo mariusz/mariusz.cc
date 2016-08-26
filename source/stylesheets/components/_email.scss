@@ -6,8 +6,8 @@
   }
 
   p {
-    @include span(10 of 12);
-    @include pad(1 of 12);
+    @include span-columns(10);
+    @include shift(1);
 
     text-align: center;
     margin-bottom: 2em;

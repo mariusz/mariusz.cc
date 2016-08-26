@@ -6,7 +6,7 @@
     top: -25px;
 
     a {
-      @include image-2x("logo.png", "logo@2x.png", 48px, 48px);
+      @include image-2x("/images/logo.png", "/images/logo@2x.png", 48px, 48px);
 
       display: block;
       margin: 0 auto;
