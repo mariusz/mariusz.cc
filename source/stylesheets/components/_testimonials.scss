@@ -5,6 +5,7 @@
   .flickity-viewport {
     transition: height 0.2s $easing;
     padding-bottom: 50px;
+    box-sizing: content-box;
   }
 }
 
