@@ -19,7 +19,8 @@
   },
   "scripts": {
     "production": "gulp build",
-    "gulp": "gulp watch"
+    "gulp": "gulp watch",
+    "deploy": "gulp deploy"
   },
   "repository": {
     "type": "git",
