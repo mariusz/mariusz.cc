@@ -1,0 +1,13 @@
+.banner {
+  background: $off-white;
+  padding: 20px 0;
+}
+
+.banner-wrapper {
+  @include wrapper;
+}
+
+.banner-button {
+  float: right;
+  margin-left: 50px;
+}
