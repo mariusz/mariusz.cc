@@ -1,12 +1,29 @@
 .project-wrapper {
   @include wrapper;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .project {
-  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 100%;
+  box-sizing: border-box;
+  text-align: center;
+  min-height: 300px;
+  margin-bottom: 20px;
 
-  @media only screen and (min-width: 60em) {
-    padding: 75px 0;
+  @include media($bp-medium) {
+    flex-basis: 50%;
+  } 
+
+  &:hover {
+    p {
+      opacity: 1;
+      height: auto;
+    }
   }
 
   h1, p {
@@ -14,7 +31,9 @@
   }
 
   p {
-    font-size: ms(0);
+    transition: opacity .5s $easing, height .25s $easing;
+    opacity: 0;
+    height: 0;
   }
 
   .project-meta--tiny {

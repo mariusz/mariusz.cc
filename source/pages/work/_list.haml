@@ -2,9 +2,9 @@
   .section-header
     %h2 Things I'm most proud of
 
-  - blog.articles[0...5].each do |article|
-    %article{class: "project project--#{article.title.downcase}"}
-      .project-wrapper
+  .project-wrapper
+    - blog.articles[0...5].each do |article|
+      %article{class: "project project--#{article.title.downcase}"}
         = link_to article.url do
           %h1.project-title= article.title
           %p.project-meta= article.data[:blurb].to_s
