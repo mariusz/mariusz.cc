@@ -7,6 +7,15 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   text-align: center;
+  position: relative;
+
+  .teaser-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
   .page {
     padding-top: 5em;

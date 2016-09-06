@@ -6,6 +6,7 @@ var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var neat = require('node-neat').includePaths;
 var rsync = require('gulp-rsync');
+var babel = require('gulp-babel');
 
 var srcDir = './source';
 var dstDir = './.tmp';
@@ -56,6 +57,9 @@ gulp.task('javascripts', function() {
       bowerDir + '/flickity/dist/flickity.pkgd.js',
       jsDir + '/site.js'
     ])
+    .pipe(babel({
+      presets: ['es2015']
+    }))
     .pipe(concat('site.js'))
     .pipe(uglify())
     .pipe(gulp.dest(jsOutDir))
