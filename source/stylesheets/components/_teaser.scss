@@ -8,12 +8,12 @@ $teaser-bg-color: $off-white;
   background-position: center;
 
   .page {
-    padding-top: 5em;
-    padding-bottom: 7em;
+    padding-top: ms(5);
+    padding-bottom: ms(7);
 
     @media only screen and (min-width: 800px) {
-      padding-top: 8em;
-      padding-bottom: 12em;
+      padding-top: ms(8);
+      padding-bottom: ms(10);
     }
   }
 

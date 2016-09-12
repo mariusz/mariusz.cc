@@ -1,17 +1,17 @@
 .testimonials {
-  padding: 50px 0 75px;
+  padding: ms(6) 0;
   background: $off-white;
   
   .flickity-viewport {
     transition: height 0.2s $easing;
-    padding-bottom: 50px;
+    padding-bottom: ms(4);
     box-sizing: content-box;
   }
 }
 
 .testimonials-header {
   @extend .section-header;
-  padding: 0 0 50px;
+  padding: 0 0 ms(4);
 }
 
 .testimonials-slider {
@@ -29,7 +29,7 @@
     padding: 0;
     margin: 0;
     line-height: 1.5;
-    font-size: $base-font-size;
+    font-size: ms(0);
 
     @media only screen and (min-width: 40em) {
       font-size: ms(0);

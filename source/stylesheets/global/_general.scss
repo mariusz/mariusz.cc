@@ -1,7 +1,7 @@
 small {
   color: #ddd;
   font-style: italic;
-  font-size: .5em;
+  font-size: ms(-2);
 }
 
 a {
@@ -16,13 +16,21 @@ a {
 
 .section-header {
   text-align: center;
-  padding: 100px 0 50px;
+  padding: ms(4) 0 ms(2);
+
+  @include media($bp-large) {
+    padding: ms(6) 0 ms(2);
+  }
 
   h2 {
-    font-size: 1.25em;
+    font-size: ms(-1);
     letter-spacing: .1em;
     text-transform: uppercase;
-    color: lighten($text-color, 20%);
+    color: $text-color;
     margin: 0;
+  }
+
+  a {
+    color: $text-color;
   }
 }
