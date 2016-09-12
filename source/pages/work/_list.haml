@@ -1,12 +1,10 @@
 .projects
   .section-header
-    %h2 Things I'm most proud of
+    %h2 Case studies
 
   .project-wrapper
     - blog.articles[0...5].each do |article|
-      %article{class: "project project--#{article.title.downcase}"}
+      %article{class: "project project--#{article.title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')}"}
         = link_to article.url do
           %h1.project-title= article.title
           %p.project-meta= article.data[:blurb].to_s
-          %p.project-meta--tiny= article.data[:project_role].to_s
-          %p.project-meta--tiny= article.data[:project_time].to_s

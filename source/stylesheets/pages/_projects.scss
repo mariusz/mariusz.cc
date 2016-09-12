@@ -14,26 +14,19 @@
   text-align: center;
   min-height: 300px;
   margin-bottom: 20px;
+  background: $off-white;
+  transition: background .2s $easing;
 
   @include media($bp-medium) {
     flex-basis: 50%;
-  } 
-
-  &:hover {
-    p {
-      opacity: 1;
-      height: auto;
-    }
   }
 
   h1, p {
     margin: 0;
   }
 
-  p {
-    transition: opacity .5s $easing, height .25s $easing;
-    opacity: 0;
-    height: 0;
+  a, a:hover {
+    color: $text-color;
   }
 
   .project-meta--tiny {
@@ -44,10 +37,23 @@
 }
 
 .project--lifetramp {
-  background: url('/images/work/lifetramp/bg.jpg');
-  color: $white;
-
-  a, h1, p {
+  &:hover {
+    background: #9ab531;
     color: $white;
+    
+    a, h1, p, a:hover {
+      color: $white;
+    }
+  }
+}
+
+.project--home-eat-home {
+  &:hover {
+    background: #ca556a;
+    color: $white;
+
+    a, h1, p, a:hover {
+      color: $white;
+    }
   }
 }

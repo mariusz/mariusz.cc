@@ -5,3 +5,4 @@ blurb: Your one-stop shop for fresh home-cooked dishes
 project_role: Lead Interface/Experience Designer
 ---
 
+<%= partial "layouts/header" %>
