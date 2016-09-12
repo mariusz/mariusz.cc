@@ -4,8 +4,9 @@ $(function() {
   $.jribbble.setToken('2436518deac736cbcdf145c359fb78db1ea983e46701fbf01496df7476565866');
 
   class ColorSlider {
-    constructor(element, hue, saturation, lightness, alpha, tick) {
+    constructor(element, parameter, hue, saturation, lightness, alpha, tick) {
       this._element = element;
+      this._parameter = parameter;
       this._hue = hue;
       this._saturation = saturation;
       this._lightness = lightness;
@@ -20,7 +21,7 @@ $(function() {
         this._hue++;
       }
 
-      this._element.style.backgroundColor = `hsla(${this._hue}, ${this._saturation}%, ${this._lightness}%, ${this._alpha})`;
+      this._element.style[this._parameter] = `hsla(${this._hue}, ${this._saturation}%, ${this._lightness}%, ${this._alpha})`;
       window.requestAnimationFrame(() => this.draw());
     }
 
@@ -67,10 +68,6 @@ $(function() {
 
   $(document).ready(function() {
     getDribbbleShots();
-
-    var overlay = document.getElementById('teaserOverlay');
-    var slider = new ColorSlider(overlay, 316, 100, 35, 0.25, 20);
-    slider.draw();
 
     return $('#testimonials_slider').flickity({
       contain: true,

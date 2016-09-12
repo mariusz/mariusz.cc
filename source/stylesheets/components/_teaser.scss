@@ -1,21 +1,11 @@
-.teaser {
-  color: $off-white;
-  background: $teaser-bg url("/images/background.jpg");
-  background-size: 100% 100%;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  text-align: center;
-  position: relative;
+$teaser-bg-color: $off-white;
 
-  .teaser-overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+.teaser {
+  color: $text-color;
+  background: $teaser-bg-color;
+  position: relative;
+  background-size: cover;
+  background-position: center;
 
   .page {
     padding-top: 5em;
@@ -36,7 +26,6 @@
     font-weight: 300;
     line-height: 1.125;
     font-size: ms(1);
-    letter-spacing: -.05em;
 
     @media only screen and (min-width: 40em) {
       font-size: ms(2);
@@ -44,11 +33,11 @@
   }
 
   .design-and-build {
-    font-size: 1.75em;
+    font-size: 1.5em;
     display: block;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.125;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -.05em;
 
     @media only screen and (min-width: 40em) { 
       font-size: 2em;
@@ -61,13 +50,12 @@
 
   .actions {
     margin-top: 3em;
-    text-align: center;
   }
 
   .or {
     margin-left: 1em;
     margin-right: 1em;
-    font-family: Georgia, sans-serif;
+    font-family: $font-family-serif;
     font-weight: normal;
     font-style: italic;
   }

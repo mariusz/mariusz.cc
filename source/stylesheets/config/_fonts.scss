@@ -1,11 +1,13 @@
-$base-font-size: 1.5em;
+$base-font-size: 1.5rem;
 $ms-base: $base-font-size;
 $ms-ratio: 1.25;
 $line-height: 1.5; 
 $header-line-height: 1.25;
+$font-family-sans: "mr-eaves-xl-modern", sans-serif;
+$font-family-serif: "ff-tisa-web-pro", serif;
 
 body {
-  font-family: "faricy-new-web", sans-serif;
+  font-family: $font-family-sans;
   font-size: 100%;
   font-weight: 500;
   line-height: $line-height;
@@ -17,11 +19,11 @@ body {
   text-rendering: optimizeLegibility;
 
   // Ligatures
-  -moz-font-feature-settings: "liga=1, dlig=1";
-  -ms-font-feature-settings: "liga", "dlig";
-  -webkit-font-feature-settings: "liga", "dlig";
-  -o-font-feature-settings: "liga", "dlig";
-  font-feature-settings: "liga", "dlig";
+  -moz-font-feature-settings: "liga=1";
+  -ms-font-feature-settings: "liga";
+  -webkit-font-feature-settings: "liga";
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
 }
 
 h1, h2, h3 {
@@ -41,7 +43,7 @@ h3 {
 }
 
 .amp {
-  font-family: "garvis-pro", serif;
+  font-family: $font-family-serif;
   font-style: italic;
   font-weight: normal;
 }

@@ -2,6 +2,7 @@ nav, [role=navigation] {
   ul {
     list-style: none;
     padding: 0;
+    margin: 0 auto;
   }
 }
 
@@ -22,7 +23,6 @@ nav, [role=navigation] {
   li {
     display: inline;
     padding: 0 15px 40px;
-    border-bottom: 1px solid $text-color;
   }
 
   a {
@@ -34,7 +34,7 @@ nav, [role=navigation] {
     letter-spacing: .075em;
 
     &:hover {
-      color: $off-white;
+      color: $button-color;
     }
   }
 }

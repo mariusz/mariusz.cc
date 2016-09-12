@@ -2,22 +2,22 @@
 input[type=submit],
 button {
   transition: background-color .5s $easing;
-  box-shadow: 0 5px 10px rgba(0,0,0,.2);
   border-radius: .125em;
-  background: $button-color;
-  color: $white;
+  background: transparent;
+  border: 1px solid $button-color;
+  color: $button-color;
   padding: .5em 1em;
   font-weight: bold;
   text-decoration: none;
   word-wrap: nowrap;
   text-transform: uppercase;
   letter-spacing: .05em;
-  border: 0;
 
   -webkit-font-smoothing: antialiased; 
 
   &:hover {
-    background: lighten($button-color, 10%);
+    background: $button-color;
+    border-color: $button-color;
     color: $white;
   }
 }

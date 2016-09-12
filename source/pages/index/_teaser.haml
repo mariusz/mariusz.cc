@@ -1,13 +1,12 @@
 .teaser
-  .teaser-overlay#teaserOverlay
+  .teaser-overlay
   = partial "layouts/header"
 
   .page
-    %h1
-      Hello, my name is Mariusz and I
-      %span.design-and-build 
-        solve problems
-      with good design.
+    %h1#teaserText
+      %span.design-and-build
+        So much more than pretty pixels.
+      Hello. My name is Mariusz and I believe in solving business problems with good design.
 
     .actions
       = link_to "See my work", "#work", class: "button teaser-button"
