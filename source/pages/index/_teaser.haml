@@ -3,11 +3,12 @@
   = partial "layouts/header"
 
   .page
-    %h1#teaserText
-      %span.design-and-build
-        So much more than pixels.
-      Hello. My name is Mariusz and I believe in solving real problems with good design.
+    .wrapper
+      %h1.wow.fadeInUp#teaserText
+        %span.design-and-build
+          So much more than pixels.
+        Hello. My name is Mariusz and I believe in solving real problems with good design.
 
-    .actions
-      = link_to "See my work", "#work", class: "button teaser-button"
-      = link_to "Hire me", "#contact", class: "button teaser-button teaser-button--last"
+      .actions.wow.fadeInUp
+        = link_to "See my work", "#work", class: "button teaser-button"
+        = link_to "Hire me", "#contact", class: "button teaser-button teaser-button--last"

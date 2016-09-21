@@ -1,7 +1,7 @@
 .testimonials {
   padding: ms(6) 0;
-  background: $off-white;
-  
+  border-top: 1px solid $separator-color;
+
   .flickity-viewport {
     transition: height 0.2s $easing;
     padding-bottom: ms(4);
