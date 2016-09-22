@@ -15,7 +15,11 @@ nav, [role=navigation] {
 
   li {
     display: inline;
-    padding: 0 15px 40px;
+    padding: 0 5px;
+
+    @media only screen and (min-width: $bp-medium) {
+      padding: 0 15px;
+    }
   }
 
   a {
