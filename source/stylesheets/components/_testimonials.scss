@@ -2,10 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: ms(6) 0;
 
   @media only screen and (min-width: $bp-large) {
     height: 100vh;
     min-height: 640px;
+    padding: 0;
   }
 
   .flickity-viewport {
