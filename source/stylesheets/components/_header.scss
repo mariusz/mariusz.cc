@@ -1,9 +1,13 @@
 [role=banner] {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 99;
+
+  @media only screen and (min-width: $bp-medium) {
+    position: fixed;
+  }
 
   h1 {
     float: left;
