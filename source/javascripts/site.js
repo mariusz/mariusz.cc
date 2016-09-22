@@ -100,6 +100,10 @@ $(function() {
     var wpSkills = makeWP('skills', 'index--skills');
     var wpContact = makeWP('contact', 'index--contact');
 
+    var overlay = document.getElementById('teaserOverlay');
+    var slider = new ColorSlider(overlay, 'backgroundColor', 259, 27, 21, 0.5, 20);
+    slider.draw();
+
     return $('#testimonials_slider').flickity({
       contain: true,
       parallax: true,

@@ -17,6 +17,9 @@ $teaser-bg-color: $off-white;
     height: 100vh;
   }
 
+  .page {
+    position: relative;
+  }
 
   h1 {
     font-weight: 300;
@@ -56,6 +59,14 @@ $teaser-bg-color: $off-white;
     font-weight: normal;
     font-style: italic;
   }
+}
+
+.teaser-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .teaser-button {

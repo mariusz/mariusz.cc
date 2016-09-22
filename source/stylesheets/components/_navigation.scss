@@ -4,7 +4,7 @@ nav, [role=navigation] {
   @media only screen and (min-width: 640px) {
     display: block;
   }
-  
+
   ul {
     list-style: none;
     padding: 0;
@@ -26,7 +26,7 @@ nav, [role=navigation] {
 
   a {
     transition: color .25s $easing;
-    color: $text-color;
+    color: $white;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;

@@ -1,18 +1,19 @@
 body {
   background: $white;
-  transition: background .5s ease;
+  transition: background .5s $easing;
+}
+
+.index--work,
+.index--skills,
+.index--contact {
+  [role=navigation] a {
+    color: $text-color;
+  }
 }
 
 .index--work {
   [role=banner] {
     background: $white;
-  }
-}
-
-.index--about,
-.index--testimonials {
-  [role=navigation] a {
-    color: $white;
   }
 }
 
