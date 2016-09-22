@@ -1,3 +1,37 @@
+body {
+  background: $white;
+  transition: background .5s ease;
+}
+
+.index--work {
+  [role=banner] {
+    background: $white;
+  }
+}
+
+.index--about,
+.index--testimonials {
+  [role=navigation] a {
+    color: $white;
+  }
+}
+
+.index--testimonials {
+  background: $button-color;
+  color: $white;
+
+  .testimonials-header {
+    h2 {
+      color: $white;
+    }
+  }
+}
+
+.index--work {
+  background: $white;
+  color: $text-color;
+}
+
 small {
   color: #ddd;
   font-style: italic;

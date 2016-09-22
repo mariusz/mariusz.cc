@@ -1,21 +1,24 @@
 .testimonials {
-  padding: ms(6) 0;
-  border-top: 1px solid $separator-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-height: 640px;
 
   .flickity-viewport {
     transition: height 0.2s $easing;
     padding-bottom: ms(4);
     box-sizing: content-box;
   }
+
+  .page {
+    width: 100%;
+  }
 }
 
 .testimonials-header {
   @extend .section-header;
   padding: 0 0 ms(4);
-}
-
-.testimonials-slider {
-  @include wrapper;
 }
 
 .testimonials-person {
@@ -38,7 +41,7 @@
 }
 
 .testimonials-person-meta {
-  color: lighten($text-color, 40%);
+  color: transparentize($white, 0.4);
   padding-top: 20px;
 
   @media only screen and (min-width: 40em) {

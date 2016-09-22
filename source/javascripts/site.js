@@ -1,6 +1,5 @@
 $(function() {
   var getDribbbleShots;
-
   $.jribbble.setToken('2436518deac736cbcdf145c359fb78db1ea983e46701fbf01496df7476565866');
 
   class ColorSlider {
@@ -68,6 +67,56 @@ $(function() {
 
   $(document).ready(function() {
     getDribbbleShots();
+
+    var wpWork = new Waypoint.Inview({
+      element: document.getElementById('work'),
+      entered: function(direction) {
+        $('body').addClass('index--work');
+      },
+      exited: function(direction) {
+        $('body').removeClass('index--work');
+      }
+    });
+
+    var wpTestimonials = new Waypoint.Inview({
+      element: document.getElementById('testimonials'),
+      entered: function(direction) {
+        $('body').addClass('index--testimonials');
+      },
+      exited: function(direction) {
+        $('body').removeClass('index--testimonials');
+      }
+    });
+
+    var wpAbout = new Waypoint.Inview({
+      element: document.getElementById('about'),
+      entered: function(direction) {
+        $('body').addClass('index--about');
+      },
+      exited: function(direction) {
+        $('body').removeClass('index--about');
+      }
+    });
+
+    var wpSkills = new Waypoint.Inview({
+      element: document.getElementById('skills'),
+      entered: function(direction) {
+        $('body').addClass('index--skills');
+      },
+      exited: function(direction) {
+        $('body').removeClass('index--skills');
+      }
+    });
+
+    var wpContact = new Waypoint.Inview({
+      element: document.getElementById('contact'),
+      entered: function(direction) {
+        $('body').addClass('index--contact');
+      },
+      exited: function(direction) {
+        $('body').removeClass('index--contact');
+      }
+    });
 
     return $('#testimonials_slider').flickity({
       contain: true,

@@ -7,20 +7,16 @@ $teaser-bg-color: $off-white;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(/images/background.jpg);
-  min-height: 640px;
+  min-height: 720px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  .page {
-    height: 65vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 500px;
-
-    @media only screen and (min-width: 800px) {
-      padding-top: ms(8);
-      padding-bottom: ms(10);
-    }
+  @media only screen and (min-width: $bp-large) {
+    min-height: 640px;
+    height: 100vh;
   }
+
 
   h1 {
     font-weight: 300;
@@ -38,6 +34,7 @@ $teaser-bg-color: $off-white;
     font-weight: 900;
     line-height: 1;
     letter-spacing: -.05em;
+    padding-bottom: .25em;
 
     @media only screen and (min-width: 40em) { 
       font-size: 2em;
@@ -67,6 +64,7 @@ $teaser-bg-color: $off-white;
   margin-bottom: 2em;
   color: $white;
   border-color: $white;
+  text-align: center;
 
   @media only screen and (min-width: 48em) {
     display: inline-block;

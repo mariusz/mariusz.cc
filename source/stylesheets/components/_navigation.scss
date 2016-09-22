@@ -7,17 +7,10 @@ nav, [role=navigation] {
 }
 
 [role=navigation] {
-  @include wrapper;
+  float: right;
 
   ul {
-    @include span-columns(12);
-
     text-align: center;
-
-    @media only screen and (min-width: 600px) {
-      @include span-columns(8);
-      @include shift(2);
-    }
   }
 
   li {
@@ -32,6 +25,8 @@ nav, [role=navigation] {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: .075em;
+    display: inline-block;
+    line-height: 100px;
 
     &:hover {
       color: $button-color;

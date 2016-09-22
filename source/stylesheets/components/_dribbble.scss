@@ -1,8 +1,14 @@
 .dribbble {
-  @include wrapper;
-
   margin-top: $base-font-size;
   padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (min-width: $bp-large) {
+    height: 100vh;
+    min-height: 600px;
+  }
 
   header {
     @extend .section-header;

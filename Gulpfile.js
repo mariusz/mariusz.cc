@@ -55,6 +55,8 @@ gulp.task('javascripts', function() {
       bowerDir + '/jquery/dist/jquery.js',
       bowerDir + '/jribbble/dist/jribbble.js',
       bowerDir + '/flickity/dist/flickity.pkgd.js',
+      bowerDir + '/waypoints/lib/jquery.waypoints.js',
+      bowerDir + '/waypoints/lib/shortcuts/inview.js',
       jsDir + '/site.js'
     ])
     .pipe(babel({

@@ -5,11 +5,18 @@
   background-repeat: no-repeat;
   color: #fff;
   padding: ms(4);
-  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media only screen and (min-width: 800px) {
     background-image: url("/images/photo.jpg");
     background-attachment: fixed;
+  }
+
+  @media only screen and (min-width: $bp-large) {
+    min-height: 400px;
+    height: 100vh;
   }
 
   .content {
