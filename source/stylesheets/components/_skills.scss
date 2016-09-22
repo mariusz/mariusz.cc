@@ -29,9 +29,9 @@
   font-size: $base-font-size;
   list-style: none;
   padding: 50px 0;
-  column-count: 2;
 
   @media only screen and (min-width: $bp-large) {
     padding: 0;
+    column-count: 2;
   }
 }

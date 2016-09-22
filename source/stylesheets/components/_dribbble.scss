@@ -22,14 +22,9 @@
     flex-wrap: wrap;
 
     li {
-      flex: 0 1 100%;
+      flex: 0 1 50%;
       padding: 5px;
   
-      @include media(401px) {
-        flex-basis: 50%;
-      }
-
-
       @include media(601px) {
         flex-basis: 33.3%;
         padding: 10px;

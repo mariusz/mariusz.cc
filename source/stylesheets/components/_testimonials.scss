@@ -2,8 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  min-height: 640px;
+
+  @media only screen and (min-width: $bp-large) {
+    height: 100vh;
+    min-height: 640px;
+  }
 
   .flickity-viewport {
     transition: height 0.2s $easing;
