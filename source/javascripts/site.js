@@ -68,55 +68,37 @@ $(function() {
   $(document).ready(function() {
     getDribbbleShots();
 
-    var wpWork = new Waypoint.Inview({
-      element: document.getElementById('work'),
-      entered: function(direction) {
-        $('body').addClass('index--work');
-      },
-      exited: function(direction) {
-        $('body').removeClass('index--work');
-      }
-    });
+    var makeWP = function(elementId, elementClass) {
+      return new Waypoint.Inview({
+        element: document.getElementById(elementId),
+        enter: function(direction) {
+          if (direction == 'up') {
+            $('body').addClass(elementClass);
+          }
+        },
+        entered: function(direction) {
+          if (direction == 'down') {
+            $('body').addClass(elementClass);
+          }
+        },
+        exit: function(direction) {
+          if (direction == 'up') {
+            $('body').removeClass(elementClass);
+          }
+        },
+        exited: function(direction) {
+          if (direction == 'down') {
+            $('body').removeClass(elementClass);
+          }
+        }
+      });
+    }
 
-    var wpTestimonials = new Waypoint.Inview({
-      element: document.getElementById('testimonials'),
-      entered: function(direction) {
-        $('body').addClass('index--testimonials');
-      },
-      exited: function(direction) {
-        $('body').removeClass('index--testimonials');
-      }
-    });
-
-    var wpAbout = new Waypoint.Inview({
-      element: document.getElementById('about'),
-      entered: function(direction) {
-        $('body').addClass('index--about');
-      },
-      exited: function(direction) {
-        $('body').removeClass('index--about');
-      }
-    });
-
-    var wpSkills = new Waypoint.Inview({
-      element: document.getElementById('skills'),
-      entered: function(direction) {
-        $('body').addClass('index--skills');
-      },
-      exited: function(direction) {
-        $('body').removeClass('index--skills');
-      }
-    });
-
-    var wpContact = new Waypoint.Inview({
-      element: document.getElementById('contact'),
-      entered: function(direction) {
-        $('body').addClass('index--contact');
-      },
-      exited: function(direction) {
-        $('body').removeClass('index--contact');
-      }
-    });
+    var wpWork = makeWP('work', 'index--work');
+    var wpTestimonials = makeWP('testimonials', 'index--testimonials');
+    var wpAbout = makeWP('about', 'index--about');
+    var wpSkills = makeWP('skills', 'index--skills');
+    var wpContact = makeWP('contact', 'index--contact');
 
     return $('#testimonials_slider').flickity({
       contain: true,
