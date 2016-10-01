@@ -7,10 +7,11 @@ nav, [role=navigation] {
 }
 
 [role=navigation] {
-  float: right;
+  flex: 1;
 
   ul {
     text-align: center;
+    float: right;
   }
 
   li {

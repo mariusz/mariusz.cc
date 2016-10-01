@@ -17,7 +17,9 @@
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^2.0.0",
     "node-bourbon": "^4.2.8",
-    "node-neat": "^1.7.2"
+    "node-neat": "^1.7.2",
+    "sass-loader": "^4.0.2",
+    "webpack": "^1.13.2"
   },
   "scripts": {
     "production": "gulp build",
