@@ -46,7 +46,7 @@
 }
 
 .testimonials-person-meta {
-  color: transparentize($white, 0.4);
+  color: lighten($text-color, 20%);
   padding-top: 20px;
 
   @media only screen and (min-width: 40em) {
@@ -57,11 +57,26 @@
     content: "— ";
   }
 
+  .index--testimonials & {
+    color: transparentize($white, .4);
+  }
+
   a {
-    color: lighten($text-color, 40%);
+    transition: all .5s $easing;
+    color: $text-color;
+    border-bottom: $text-color;
 
     &:hover {
-      color: lighten($text-color, 60%);
+      color: $text-color;
+      border-bottom: 2px solid $text-color;
+    }
+
+    .index--testimonials & {
+      color: $white;
+
+      &:hover {
+        color: $white;
+      }
     }
   }
 }
