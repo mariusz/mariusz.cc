@@ -5,6 +5,7 @@
   .project-wrapper
     - blog.articles[0...5].each do |article|
       %article{class: "project project--#{article.title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')}"}
-        = link_to article.url do
-          %h1.project-title= article.title
-          %p.project-meta= article.data[:blurb].to_s
+        .project-item
+          = link_to article.url do
+            %h1.project-title= article.title
+            %p.project-meta= article.data[:blurb].to_s

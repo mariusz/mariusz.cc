@@ -1,25 +1,12 @@
-.project-wrapper {
-  @include wrapper;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
 .project {
   display: flex;
   align-items: center;
   justify-content: center;
   flex: 1 1 100%;
   box-sizing: border-box;
-  text-align: center;
   min-height: 300px;
-  margin-bottom: 20px;
-  background: $off-white;
+  border-bottom: 1px solid $hr;
   transition: background .2s $easing;
-
-  @include media($bp-medium) {
-    flex-basis: 50%;
-  }
 
   h1, p {
     margin: 0;
@@ -34,6 +21,10 @@
     font-style: italic;
     color: transparentize($white, .2);
   }
+}
+
+.project-item {
+  @include wrapper;
 }
 
 .project--lifetramp {

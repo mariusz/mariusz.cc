@@ -5,9 +5,11 @@ $bp-xl: 72em;
 
 @mixin wrapper($xs: 90%, $small: 80%, $medium: 80%, $large: 59em, $xl: 59em) {
   @include outer-container($xs);
+  width: 90%;
 
   @include media($bp-small) {
     @include outer-container($small);
+    width: 80%;
   }
 
   @include media($bp-medium) {
@@ -16,6 +18,7 @@ $bp-xl: 72em;
 
   @include media($bp-large) {
     @include outer-container($large);
+    width: 80%;
   }
 
   @include media($bp-xl) {
