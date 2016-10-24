@@ -1,3 +1,17 @@
+@keyframes svg-button {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 2px;
+  }
+
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 1px;
+  }
+}
+
 .button,
 input[type=submit],
 button {
@@ -19,5 +33,43 @@ button {
     background: $button-color;
     border-color: $button-color;
     color: $white;
+  }
+}
+
+.button--svg {
+  height: 50px;
+  position: relative;
+
+  .button__text {
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .05em;
+    line-height: 50px;
+    width: 100%;
+    text-align: center;
+  }
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .shape {
+    fill: transparent;
+    stroke-dasharray: 140 540;
+    stroke-width: 2px;
+    stroke: $white;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover .shape {
+    animation: .5s svg-button ease forwards;
   }
 }

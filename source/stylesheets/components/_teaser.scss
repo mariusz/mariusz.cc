@@ -3,10 +3,7 @@ $teaser-bg-color: $off-white;
 .teaser {
   color: $white;
   position: relative;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(/images/background.jpg);
+  background: #000;
   min-height: 720px;
   display: flex;
   align-items: center;
