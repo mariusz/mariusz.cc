@@ -1,22 +1,24 @@
-%form{action: "https://formkeep.com/f/e5bf280899d4", "accept-charset": "utf-8", method: "post"}
+%div.contact-form-chat{"cf-context": ""}
+%form.contact-form-form{action: "https://formkeep.com/f/e5bf280899d4", "accept-charset": "utf-8", method: "post", "cf-form-element": ""}
   %p
     %label{for: "name"} Your name:
-    %input{type: "text", name: "name", id: "name", required: "true", placeholder: "Awesome Person"}
+    %input{type: "text", name: "name", id: "name", required: "true", placeholder: "Awesome Person", "cf-questions": "Hi there! What's your name?|Hello, stranger! Mind telling me your name?"}
   %p
     %label{for: "email"} Your email address:
-    %input{type: "email", name: "email", id: "email", required: "true", placeholder: "email@awesome.person"}
+    %input{type: "email", name: "email", id: "email", required: "true", placeholder: "email@awesome.person", "cf-questions": "Thanks, {previous-answer}. And your email address?|Cool! And what's the email address I can reach you at?|Nice meeting you, {previous-answer}! Mind telling me your email?"}
   %p
     %label{for: "budget"} 
       Your budget:
       %span.hint if you're not sure, it's okay to just guesstimate
-    %select{name: "budget", id: "budget"}
-      %option{value: "10-25k"} $10.000 - $20.000
-      %option{value: "20-35k"} $20.000 - $35.000
-      %option{value: "50k+"} $35.000+
+    %select{name: "budget", id: "budget", "cf-questions": "...and your budget for this project is..? If you're not sure, don't worry, just guesstimate. 🤑|Cool! And how much are you willing to spend? If you're not sure, it's okay, just guesstimate.|Got it! And what's your budget for this project?|How much dolla dolla bills are you willing to spend? If you're not sure, just guesstimate, it's fine"}
+      %option{value: "5-10k"} $5.000 – $10.000
+      %option{value: "10-25k"} $10.000 – $20.000
+      %option{value: "20-35k"} $20.000 – $35.000
+      %option{value: "35k+"} $35.000+
   %p.long-text
     %label
       In a couple of words, what's your project about:
       %span.hint e.g. We recently got funded, we need a designer to help us redesign our MVP into a real product.
-    %textarea{name: "description", id: "description", rows: "8", cols: "80", required: "true"}
+    %input{type: "text", name: "description", id: "description", required: "true", "cf-questions": "In a couple of words, what's that thing you're working on about? You know, something like: We're a startup, just got funded, need to redesign our MVP into a real product.|What's that thing you're working on about?|What's the most exciting thing about this project you need me for?|Nice! I see you're determined to make this happen! 👌 Why do you need me for this project?"}
   %p.actions
     %input#btn_contact_submit{type: "submit", value: "Let's do it!"}
