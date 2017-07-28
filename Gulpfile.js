@@ -4,8 +4,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var imagemin = require('gulp-imagemin');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
-var bourbon = require('bourbon').includePaths;
-var neat = require('bourbon-neat').includePaths;
+var neat = require('node-neat').includePaths;
 var rsync = require('gulp-rsync');
 var babel = require('gulp-babel');
 
@@ -33,7 +32,7 @@ var fontsOutDir = dstDir + '/fonts';
 gulp.task('sass', function() {
   return gulp.src(sassDir)
     .pipe(sass({
-      includePaths: sassIncludeDir.concat(bourbon).concat(neat),
+      includePaths: sassIncludeDir.concat(neat),
       style: 'expanded'
     }).on('error', sass.logError))
     .pipe(autoprefixer('last 2 versions'))
