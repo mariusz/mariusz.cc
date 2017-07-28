@@ -73,20 +73,3 @@
     }
   }
 }
-
-.contact-form-chat {
-  min-height: 500px;
-
-  cf-chat:before {
-    display: none;
-  }
-
-  .conversational-form {
-    background: transparent;
-  }
-}
-
-.contact-form-form {
-  opacity: 0;
-  height: 0;
-}
