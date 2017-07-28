@@ -4,6 +4,8 @@
   "description": "To run locally:",
   "main": "config.ru",
   "dependencies": {
+    "bourbon": "^4.2.7",
+    "bourbon-neat": "^1.8.0",
     "gulp": "^3.9.1"
   },
   "devDependencies": {
