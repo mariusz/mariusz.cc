@@ -9,15 +9,16 @@
   %head
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
     %meta{charset: "utf-8"}
-    %meta{name: "description", content: "Web and Mobile User Interface and User Experience Design Consultant based in Berlin, Germany."}
-    %meta{name: "keywords", content: "freelance, web design, ui design, ux design, designer, interactive design, mobile design, iOS design, user interface, user experience, consultant berlin"}
+    %meta{name: "description", content: "Product, User Interface and User Experience Design Consultant based in Berlin, Germany."}
+    %meta{name: "keywords", content: "freelance, product design, design systems, web design, ui design, ux design, designer, interactive design, mobile design, iOS design, user interface, user experience, consultant berlin"}
 
-    %title= (current_page.data.title || "Web &amp; Mobile Interface & Experience Designer") + " &mdash; Mariusz Cieśla &mdash; Berlin"
+    %title= (current_page.data.title || "") + " • Mariusz Ciesla — Digital Product Designer, Berlin"
 
     = partial "layouts/typekit"
     = partial "layouts/analytics"
     = partial "layouts/mixpanel"
     = partial "layouts/content_experiments"
+    = partial "layouts/drift"
 
     = stylesheet_link_tag "vendor/normalize", "site"
 
