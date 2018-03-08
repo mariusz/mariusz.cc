@@ -72,4 +72,23 @@
       width: 60%;
     }
   }
+
+  .contact__error,
+  .contact__success {
+    padding: .5em 1em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    text-align: center;
+    border-radius: 8px;
+    color: $off-white;
+  }
+
+  .contact__error {
+    background: $error-red;
+  }
+
+  .contact__success {
+    background: $success-green;
+  }
 }

@@ -1,4 +1,10 @@
-%form{action: "https://formspree.io/xzravgyx", "accept-charset": "utf-8", method: "post"}
+#success.contact__popup.contact__success
+  Thanks! I'll be in touch within the next couple of days.
+
+#error.contact__popup.contact__error
+  Whoops, there was a problem sending your form. Try again in a minute.
+
+%form#contact{action: "https://formspree.io/xzravgyx", "accept-charset": "utf-8", method: "post"}
   %input{type: "text", name: "_gotcha", style: "display: none"}
   %p
     %label{for: "name"} Your name:
@@ -23,3 +29,5 @@
     %textarea{name: "description", id: "description", rows: "8", cols: "80", required: "true"}
   %p.actions
     %input#btn_contact_submit{type: "submit", value: "Let's do it!"}
+
+= javascript_include_tag "contact" 

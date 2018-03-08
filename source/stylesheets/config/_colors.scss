@@ -5,5 +5,11 @@ $teaser-bg: $button-color;
 $white: #fff;
 $hr: #e8e8e8;
 
+$error-red: #ff4800;
+$success-green: #488800;
+
+$error-red-bg: lighten($error-red, 20%);
+$success-green-bg: lighten($success-green, 25%);
+
 $text-color: #364054;
 $separator-color: $off-white;
