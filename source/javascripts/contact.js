@@ -1,14 +1,14 @@
 $(document).ready(function() {
-  let formData = {
-    'name': $('#name').val(),
-    'email': $('#email').val(),
-    'budget': $('#budget').val(),
-    'description': $('#description').val()
-  };
-
   $('.contact__popup').hide();
 
   $('#contact').submit(function(e) {
+    let formData = {
+      'name': $('#name').val(),
+      'email': $('#email').val(),
+      'budget': $('#budget').val(),
+      'description': $('#description').val()
+    };
+
     $.ajax({
       type: 'post',
       url: 'https://formspree.io/xzravgyx',
